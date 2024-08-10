@@ -1,0 +1,18 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<taglib> 
+<tlibversion>1.0</tlibversion>
+<jspversion>1.1</jspversion>
+<shortname>isEnabled</shortname>
+<info>Version based configuration checker</info>
+<uri>https://yatra.com/payment/ui/util</uri>
+<tag>
+    <name>isEnabled</name>
+    <tagclass>com.yatra.payment.ui.util.VersionCheckingTagHandler</tagclass>
+    <info>Version based configuration checker.</info>
+    <attribute>
+      <name>version</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+</tag>
+</taglib> 

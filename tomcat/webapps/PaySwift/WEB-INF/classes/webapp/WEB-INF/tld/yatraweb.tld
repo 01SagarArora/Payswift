@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+	version="2.0">
+	<description>Yatra JSTL 1.1 core library</description>
+	<display-name>Yatra JSTL core</display-name>
+	<tlib-version>1.0</tlib-version>
+	<short-name>yatra</short-name>
+	<uri>https://www.yatra.com/web</uri>
+	<validator>
+		<description>
+        	Provides core validation features for JSTL tags.
+    </description>
+		<validator-class>org.apache.taglibs.standard.tlv.JstlCoreTLV</validator-class>
+	</validator>
+    <tag>
+        <description>
+            Tag for getting the property
+    </description>
+        <name>purl</name>
+        <tag-class>com.yatra.payment.ui.tag.WebUrlPrefixTaglib</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <description>Key of the property.</description>
+            <name>key</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>Default value of the property.</description>
+            <name>def</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <description>Set the value in variable.</description>
+            <name>var</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+</taglib>

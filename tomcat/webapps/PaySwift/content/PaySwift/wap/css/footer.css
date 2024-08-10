@@ -1,0 +1,71 @@
+/* IMAGES */
+/* FONTS */
+/*	COLOR 	*/
+/*	BORDER 	*/
+/*		FONTS	*/
+/*	POSITION	*/
+/*	SCREEN SIZE	*/
+/*	*****	MEDIA MIXINS	*****	*/
+/* ***** OVER FOLLOW HIDDEN MIXINS ***** */
+/*-- Footer START HERE --*/
+/* line 7, ../../sass/yt-css/footer.scss */
+html .yt-footer {
+  text-align: center;
+  background-color: #f8f8f8 !important;
+  border-top: 1px solid #c4c4c4;
+  padding: 0 1.250em;
+  color: #acabab !important;
+}
+/* line 13, ../../sass/yt-css/footer.scss */
+html .yt-footer span, html .yt-footer a {
+  font-size: 1.5em !important;
+  font-weight: normal !important;
+}
+/* line 17, ../../sass/yt-css/footer.scss */
+html .yt-footer a {
+  color: #0194b5 !important;
+  background-color: #f8f8f8 !important;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  padding: 0;
+  margin: 1.40em 0;
+  display: block;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 17, ../../sass/yt-css/footer.scss */
+  html .yt-footer a {
+    margin: 1.1em 0;
+  }
+}
+/* line 31, ../../sass/yt-css/footer.scss */
+html .yt-footer .ui-icon.ui-icon-yt-grey-logo {
+  width: 45px !important;
+  height: 53px !important;
+  margin-top: -14px;
+  vertical-align: middle;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 31, ../../sass/yt-css/footer.scss */
+  html .yt-footer .ui-icon.ui-icon-yt-grey-logo {
+    width: 25px !important;
+    height: 28px !important;
+  }
+}
+/* line 41, ../../sass/yt-css/footer.scss */
+html .yt-footer .copyright-info {
+  border-top: 1px solid #c4c4c4;
+  padding: 1.938em 0 1.875em 0;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 41, ../../sass/yt-css/footer.scss */
+  html .yt-footer .copyright-info {
+    padding: 1.3em 0 1.675em 0;
+  }
+}
+
+/*-- eof Footer --*/

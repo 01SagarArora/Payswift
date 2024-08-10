@@ -1,0 +1,1617 @@
+/* REVIEW ADDONS */
+/* IMAGES */
+/* FONTS */
+/*	COLOR 	*/
+/*	BORDER 	*/
+/*		FONTS	*/
+/*	POSITION	*/
+/*	SCREEN SIZE	*/
+/*	*****	MEDIA MIXINS	*****	*/
+/* ***** OVER FOLLOW HIDDEN MIXINS ***** */
+/* line 3, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps {
+  border-bottom: 1px solid #c6c6c6;
+}
+/* line 5, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps.allow-back-button {
+  padding: 0 0 0 12.18%;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 9, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps.allow-back-button .back-button {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 12.18%;
+  height: 100%;
+  background: white;
+  border-right: 1px solid #c6c6c6;
+  text-align: center;
+}
+/* line 19, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps.allow-back-button .back-button .ui-icon {
+  position: absolute;
+  top: 50%;
+  margin: -16px 0 0 -16px;
+  /* max-width: 480 */
+  left: 50%;
+}
+@media only screen and (max-width: 480px) {
+  /* line 19, ../../sass/yt-css/widgets/_steps.scss */
+  .yt-steps.allow-back-button .back-button .ui-icon {
+    margin: -12px 0 0 -12px;
+  }
+}
+/* line 30, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps {
+  padding: 1.5em 3em .50em 2em;
+  float: left;
+  /* max-width: 480 */
+  font-size: 1em;
+  background: #fbfbfb;
+  list-style: none;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+}
+@media only screen and (max-width: 480px) {
+  /* line 30, ../../sass/yt-css/widgets/_steps.scss */
+  .yt-steps .steps {
+    padding: 1em 2em 0;
+  }
+}
+/* line 42, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li {
+  width: 44%;
+  padding: 0;
+  float: left;
+  color: #999999;
+  position: relative;
+}
+/* line 48, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li .tapable {
+  display: block;
+  position: absolute;
+  top: -2px;
+  width: 45px;
+  height: 45px;
+  z-index: 9;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 48, ../../sass/yt-css/widgets/_steps.scss */
+  .yt-steps .steps li .tapable {
+    width: 32px;
+    height: 32px;
+  }
+}
+/* line 60, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li .counter {
+  height: 2px;
+  margin-top: 20px;
+  /* max-width: 480 */
+  background: #e2e2e2;
+  position: relative;
+}
+@media only screen and (max-width: 480px) {
+  /* line 60, ../../sass/yt-css/widgets/_steps.scss */
+  .yt-steps .steps li .counter {
+    margin-top: 10px;
+  }
+}
+/* line 69, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li .counter:after, .yt-steps .steps li .counter:before {
+  float: left;
+  position: absolute;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  z-index: 9;
+}
+/* line 75, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li .counter:after {
+  border: 2px solid #e2e2e2;
+  content: attr(title);
+  background: #f8f8f8;
+  width: 38px;
+  height: 38px;
+  top: -20px;
+  margin-left: -18px;
+  line-height: 37px;
+  /* max-width: 480 */
+  text-align: center;
+}
+@media only screen and (max-width: 480px) {
+  /* line 75, ../../sass/yt-css/widgets/_steps.scss */
+  .yt-steps .steps li .counter:after {
+    width: 24px;
+    height: 24px;
+    top: -13px;
+    margin-left: -10px;
+    line-height: 24px;
+  }
+}
+/* line 93, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li .counter:before {
+  border: none;
+  background: #fbfbfb;
+  width: 52px;
+  height: 50px;
+  top: -26px;
+  margin-left: -20px;
+  /* max-width: 480 */
+  z-index: 8;
+  content: '';
+}
+@media only screen and (max-width: 480px) {
+  /* line 93, ../../sass/yt-css/widgets/_steps.scss */
+  .yt-steps .steps li .counter:before {
+    width: 38px;
+    height: 36px;
+    top: -19px;
+    margin-left: -12px;
+  }
+}
+/* line 110, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li .step-label {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: .5em 0 0;
+  line-height: 19px;
+  /* max-width: 480 */
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 110, ../../sass/yt-css/widgets/_steps.scss */
+  .yt-steps .steps li .step-label {
+    font-size: .7em;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 110, ../../sass/yt-css/widgets/_steps.scss */
+  .yt-steps .steps li .step-label {
+    font-size: .8em;
+  }
+}
+/* line 120, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li .step-label span {
+  position: relative;
+}
+/* line 126, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li.active .counter {
+  background: #2abd2a;
+  color: #2abd2a;
+}
+/* line 129, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li.active .counter:after {
+  border-color: #2abd2a;
+}
+/* line 133, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li.active .step-label {
+  color: #666666;
+}
+/* line 138, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li.complete .counter {
+  background: #2abd2a;
+  color: white;
+}
+/* line 141, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li.complete .counter:after {
+  border-color: #2abd2a;
+  background: #2abd2a;
+}
+/* line 146, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li.complete .step-label {
+  color: #333333;
+  padding-left: 0;
+}
+/* line 152, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li:first-child {
+  width: 28%;
+  text-align: left;
+}
+/* line 156, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li:first-child .counter:after {
+  margin-left: 0;
+}
+/* line 159, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li:first-child .counter:before {
+  margin-left: -3px;
+}
+/* line 163, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li:first-child .step-label {
+  margin-left: -11%;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 163, ../../sass/yt-css/widgets/_steps.scss */
+  .yt-steps .steps li:first-child .step-label {
+    margin-left: -17%;
+  }
+}
+/* line 169, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li:first-child .tapable {
+  left: 0;
+}
+/* line 174, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li:nth-child(2) .tapable {
+  left: 42%;
+}
+/* line 177, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li:nth-child(2) .step-label {
+  margin-left: 7px;
+}
+/* line 182, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li.last {
+  width: 28%;
+  text-align: right;
+}
+/* line 186, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li.last .counter:after {
+  margin-left: 0;
+  right: 0;
+}
+/* line 190, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li.last .counter:before {
+  margin-left: -3px;
+  right: 0;
+}
+/* line 195, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li.last .step-label {
+  width: 122%;
+}
+/* line 198, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li.last .tapable {
+  right: 0;
+}
+
+/* REVIEW ADDONS */
+/* line 2, ../../sass/yt-css/widgets/_addons.scss */
+.addons-content {
+  padding: 0 1em;
+  background: #f8f8f8;
+}
+/* line 5, ../../sass/yt-css/widgets/_addons.scss */
+.addons-content .heading {
+  font-family: "Lato Bold";
+  font-size: 1.250em;
+  color: #333333;
+  padding: 1em 0;
+  border-bottom: 1px solid #e2e2e2;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 5, ../../sass/yt-css/widgets/_addons.scss */
+  .addons-content .heading {
+    padding: .7em 0;
+  }
+}
+/* line 15, ../../sass/yt-css/widgets/_addons.scss */
+.addons-content .ui-checkbox {
+  position: relative;
+}
+/* line 17, ../../sass/yt-css/widgets/_addons.scss */
+.addons-content .ui-checkbox label {
+  padding-top: 1em !important;
+  padding-bottom: 1em !important;
+  padding-left: 3em !important;
+  font-size: 1.1em;
+}
+/* line 22, ../../sass/yt-css/widgets/_addons.scss */
+.addons-content .ui-checkbox label:after {
+  left: 0;
+  top: 1em !important;
+  margin-top: 3px !important;
+}
+
+/* line 3, ../../sass/yt-css/widgets/_fare-details.scss */
+.fare-details .ui-collapsible-heading a {
+  border-bottom: none;
+  background: white !important;
+}
+/* line 10, ../../sass/yt-css/widgets/_fare-details.scss */
+.fare-details.ui-collapsible-collapsed .ui-collapsible-heading a {
+  border-bottom: 1px solid #e1e1e1;
+  background: #fbfbfb !important;
+}
+/* line 16, ../../sass/yt-css/widgets/_fare-details.scss */
+.fare-details .ui-collapsible-content {
+  background: white !important;
+}
+/* line 19, ../../sass/yt-css/widgets/_fare-details.scss */
+.fare-details .details-summary {
+  padding: 0 0.875em;
+}
+/* line 21, ../../sass/yt-css/widgets/_fare-details.scss */
+.fare-details .details-summary li {
+  border-top: 1px solid #e1e1e1;
+  padding: 0.875em 0;
+  font-size: 1.2em;
+}
+/* line 26, ../../sass/yt-css/widgets/_fare-details.scss */
+.fare-details .details-summary li .fare-brk-title,
+.fare-details .details-summary li .total-fare-txt {
+  text-align: left;
+}
+/* line 30, ../../sass/yt-css/widgets/_fare-details.scss */
+.fare-details .details-summary li .fare-brk-rs,
+.fare-details .details-summary li .total-fare {
+  text-align: right;
+  font-weight: bold;
+}
+/* line 35, ../../sass/yt-css/widgets/_fare-details.scss */
+.fare-details .details-summary li .fare-brk-rs .minus {
+  color: #999999;
+}
+/* line 39, ../../sass/yt-css/widgets/_fare-details.scss */
+.fare-details .details-summary li .rs {
+  color: #f9822e;
+  display: inline-block;
+  margin-top: 0;
+  font-size: 1.2em;
+  font-weight: normal;
+}
+/* line 46, ../../sass/yt-css/widgets/_fare-details.scss */
+.fare-details .details-summary li .total-fare-txt {
+  font-size: 2em;
+}
+/* line 49, ../../sass/yt-css/widgets/_fare-details.scss */
+.fare-details .details-summary li .total-fare {
+  font-size: 2em;
+  padding-bottom: 0em;
+}
+/* line 52, ../../sass/yt-css/widgets/_fare-details.scss */
+.fare-details .details-summary li .total-fare .rs {
+  @extent .rs;
+}
+
+/* REVIEW ADDONS */
+/* line 2, ../../sass/yt-css/widgets/_cancellation-policy.scss */
+.cancel-policy-content {
+  background: #f8f8f8;
+}
+/* line 4, ../../sass/yt-css/widgets/_cancellation-policy.scss */
+.cancel-policy-content .list-item {
+  padding: 0 0.875em 0.625em;
+}
+/* line 6, ../../sass/yt-css/widgets/_cancellation-policy.scss */
+.cancel-policy-content .list-item li {
+  padding: 0.675em 0 0.250em 1em;
+  position: relative;
+  font-size: 1.1em;
+}
+/* line 10, ../../sass/yt-css/widgets/_cancellation-policy.scss */
+.cancel-policy-content .list-item li p {
+  padding: 0;
+  margin: 0;
+}
+/* line 14, ../../sass/yt-css/widgets/_cancellation-policy.scss */
+.cancel-policy-content .list-item li:first-child {
+  border-top: none;
+}
+/* line 17, ../../sass/yt-css/widgets/_cancellation-policy.scss */
+.cancel-policy-content .list-item li:before {
+  width: .5em;
+  height: .5em;
+  background: #e1e1e1;
+  content: '';
+  float: left;
+  position: absolute;
+  left: 0;
+  top: 1.1em;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+/* line 3, ../../sass/review-trip/flight-review.scss */
+.review-details {
+  padding: 1em 1em 0;
+  border-bottom: 1px solid #e2e2e2;
+  /* max-width: 360 */
+}
+@media only screen and (max-width: 360px) {
+  /* line 3, ../../sass/review-trip/flight-review.scss */
+  .review-details {
+    padding: 1em 0.6em;
+  }
+}
+/* line 11, ../../sass/review-trip/flight-review.scss */
+.review-details .details .head {
+  border-bottom: 1px solid #e2e2e2;
+  border-top: 1px solid #e2e2e2;
+  padding: .5em 0;
+  /* max-width: 480 */
+}
+
+/* line 17, ../../sass/review-trip/flight-review.scss */
+.review-details .details .head li {
+  width: 49% !important;
+  font-size: 16px;
+  line-height: 32px;
+  /* max-width: 480 */
+  /* max-width: 360 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 17, ../../sass/review-trip/flight-review.scss */
+  .review-details .details .head li {
+    font-size: 1.25em !important;
+    line-height: 24px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  /* line 17, ../../sass/review-trip/flight-review.scss */
+  .review-details .details .head li {
+    font-size: 1.125em !important;
+  }
+}
+/* line 29, ../../sass/review-trip/flight-review.scss */
+.review-details .details .head .org-dest {
+  width: 54%;
+  padding: 0 0 0 2.5em;
+  font-family: "Lato Bold";
+  font-size: 1.3em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+/* line 36, ../../sass/review-trip/flight-review.scss */
+.review-details .details .head .org-dest:after {
+  background: transparent url("../../images/icons-32.png") 0px -246px no-repeat;
+  /* max-width: 480 */
+  background-image: url(../../images/icons-32.png);
+  width: 32px !important;
+  height: 32px !important;
+  /* max-width: 480 */
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 36, ../../sass/review-trip/flight-review.scss */
+  .review-details .details .head .org-dest:after {
+    background: transparent url("../../images/icons-24.png") 0px -246px no-repeat;
+    /* start retina sprite */
+    /* eof retina sprite */
+  }
+}
+@media only screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 480px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 480px) and (-o-min-device-pixel-ratio: 200 / 100), only screen and (max-width: 480px) and (min-device-pixel-ratio: 2) {
+  /* line 36, ../../sass/review-trip/flight-review.scss */
+  .review-details .details .head .org-dest:after {
+    background: transparent url("../../images/icons-24@2x-v1.png") 0px -246px no-repeat;
+    -webkit-background-size: 320px 640px;
+    -moz-background-size: 320px 640px;
+    background-size: 320px 640px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 36, ../../sass/review-trip/flight-review.scss */
+  .review-details .details .head .org-dest:after {
+    background-image: url(../../images/icons-24.png);
+    width: 24px !important;
+    height: 24px !important;
+    /* start retina sprite */
+    /* eof retina sprite */
+  }
+}
+@media only screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 480px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 480px) and (-o-min-device-pixel-ratio: 200 / 100), only screen and (max-width: 480px) and (min-device-pixel-ratio: 2) {
+  /* line 36, ../../sass/review-trip/flight-review.scss */
+  .review-details .details .head .org-dest:after {
+    background: url(../../images/icons-24@2x-v1.png);
+    -webkit-background-size: 320px 640px;
+    -moz-background-size: 320px 640px;
+    background-size: 320px 640px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 36, ../../sass/review-trip/flight-review.scss */
+  .review-details .details .head .org-dest:after {
+    background: transparent url("../../images/icons-32.png") 0px -242px no-repeat;
+    /* max-width: 480 */
+  }
+}
+@media only screen and (max-width: 480px) and (max-width: 480px) {
+  /* line 36, ../../sass/review-trip/flight-review.scss */
+  .review-details .details .head .org-dest:after {
+    background: transparent url("../../images/icons-24.png") 0px -242px no-repeat;
+    /* start retina sprite */
+    /* eof retina sprite */
+  }
+}
+@media only screen and (max-width: 480px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 480px) and (max-width: 480px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 480px) and (max-width: 480px) and (-o-min-device-pixel-ratio: 200 / 100), only screen and (max-width: 480px) and (max-width: 480px) and (min-device-pixel-ratio: 2) {
+  /* line 36, ../../sass/review-trip/flight-review.scss */
+  .review-details .details .head .org-dest:after {
+    background: transparent url("../../images/icons-24@2x-v1.png") 0px -242px no-repeat;
+    -webkit-background-size: 320px 640px;
+    -moz-background-size: 320px 640px;
+    background-size: 320px 640px;
+  }
+}
+/* line 48, ../../sass/review-trip/flight-review.scss */
+.review-details .details .head .org-dest.return:after, .review-details .details .head .org-dest.typeReturn:after {
+  background-position: -32px -246px;
+}
+/* line 52, ../../sass/review-trip/flight-review.scss */
+.review-details .details .head .org-dest .org-dest-in {
+  width: 46%;
+  float: left;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 52, ../../sass/review-trip/flight-review.scss */
+  .review-details .details .head .org-dest .org-dest-in {
+    width: auto;
+  }
+}
+/* line 61, ../../sass/review-trip/flight-review.scss */
+.review-details .details .head .small-screen-full {
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 61, ../../sass/review-trip/flight-review.scss */
+  .review-details .details .head .small-screen-full {
+    width: 100% !important;
+  }
+}
+/* line 66, ../../sass/review-trip/flight-review.scss */
+.review-details .details .head .date-time {
+  font-size: 1.125em;
+  /* max-width: 480 */
+  /* max-width: 360 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 66, ../../sass/review-trip/flight-review.scss */
+  .review-details .details .head .date-time {
+    font-size: 16px !important;
+    width: 100% !important;
+    margin-left: 2.6em;
+  }
+}
+@media only screen and (max-width: 360px) {
+  /* line 66, ../../sass/review-trip/flight-review.scss */
+  .review-details .details .head .date-time {
+    font-size: 0.875em !important;
+  }
+}
+/* line 76, ../../sass/review-trip/flight-review.scss */
+.review-details .details .head .date-time .grid:first-child {
+  width: 38% !important;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 76, ../../sass/review-trip/flight-review.scss */
+  .review-details .details .head .date-time .grid:first-child {
+    width: auto !important;
+  }
+}
+/* line 82, ../../sass/review-trip/flight-review.scss */
+.review-details .details .head .date-time .grid:last-child {
+  width: 62% !important;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 82, ../../sass/review-trip/flight-review.scss */
+  .review-details .details .head .date-time .grid:last-child {
+    width: auto !important;
+  }
+}
+/* line 92, ../../sass/review-trip/flight-review.scss */
+.review-details .details .airline-details {
+  padding: 1.5em 0;
+  border-bottom: 1px solid #e2e2e2;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 96, ../../sass/review-trip/flight-review.scss */
+.review-details .details .airline-details li {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+}
+/* line 99, ../../sass/review-trip/flight-review.scss */
+.review-details .details .airline-details li .logo {
+  height: 46px;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 99, ../../sass/review-trip/flight-review.scss */
+  .review-details .details .airline-details li .logo {
+    height: 24px;
+  }
+}
+/* line 105, ../../sass/review-trip/flight-review.scss */
+.review-details .details .airline-details li .airline-code {
+  color: #999999;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 105, ../../sass/review-trip/flight-review.scss */
+  .review-details .details .airline-details li .airline-code {
+    font-size: 12px;
+  }
+}
+/* line 111, ../../sass/review-trip/flight-review.scss */
+.review-details .details .airline-details li .airline-name {
+  padding: .8em 0 .2em;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 111, ../../sass/review-trip/flight-review.scss */
+  .review-details .details .airline-details li .airline-name {
+    font-size: 12px;
+  }
+}
+/* line 117, ../../sass/review-trip/flight-review.scss */
+.review-details .details .airline-details li .left-box {
+  width: 35%;
+  padding: 0 1em 0 0;
+  /* max-width: 360 */
+}
+@media only screen and (max-width: 360px) {
+  /* line 117, ../../sass/review-trip/flight-review.scss */
+  .review-details .details .airline-details li .left-box {
+    padding: 0 0.3em 0 0;
+  }
+}
+/* line 123, ../../sass/review-trip/flight-review.scss */
+.review-details .details .airline-details li .left-box .airline-name {
+  padding: 0 0 .2em;
+  /* max-width: 480 */
+  /* max-width: 360 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 123, ../../sass/review-trip/flight-review.scss */
+  .review-details .details .airline-details li .left-box .airline-name {
+    padding: .7em 0 .2em;
+  }
+}
+@media only screen and (max-width: 360px) {
+  /* line 123, ../../sass/review-trip/flight-review.scss */
+  .review-details .details .airline-details li .left-box .airline-name {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+/* line 132, ../../sass/review-trip/flight-review.scss */
+.review-details .details .airline-details li .left-box .airline-code {
+  /* max-width: 360 */
+}
+@media only screen and (max-width: 360px) {
+  /* line 132, ../../sass/review-trip/flight-review.scss */
+  .review-details .details .airline-details li .left-box .airline-code {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+/* line 139, ../../sass/review-trip/flight-review.scss */
+.review-details .details .airline-details li .airpot-terminal {
+  width: 65%;
+}
+/* line 141, ../../sass/review-trip/flight-review.scss */
+.review-details .details .airline-details li .airpot-terminal .airport-code {
+  line-height: 33px;
+  font-size: 1.7em;
+  /* max-width: 480 */
+  /* max-width: 360 */
+  margin: 0;
+}
+@media only screen and (max-width: 480px) {
+  /* line 141, ../../sass/review-trip/flight-review.scss */
+  .review-details .details .airline-details li .airpot-terminal .airport-code {
+    line-height: 23px;
+    font-size: 1.2em;
+  }
+}
+@media only screen and (max-width: 360px) {
+  /* line 141, ../../sass/review-trip/flight-review.scss */
+  .review-details .details .airline-details li .airpot-terminal .airport-code {
+    line-height: 23px;
+    font-size: 1.5em;
+  }
+}
+/* line 155, ../../sass/review-trip/flight-review.scss */
+.review-details .details .airline-details li:first-child {
+  width: 45%;
+  /* max-width: 480 */
+  /* max-width: 360 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 155, ../../sass/review-trip/flight-review.scss */
+  .review-details .details .airline-details li:first-child {
+    width: 44%;
+  }
+}
+@media only screen and (max-width: 360px) {
+  /* line 155, ../../sass/review-trip/flight-review.scss */
+  .review-details .details .airline-details li:first-child {
+    width: 46%;
+  }
+}
+/* line 164, ../../sass/review-trip/flight-review.scss */
+.review-details .details .airline-details li:nth-child(2) {
+  width: 30%;
+  /* max-width: 480 */
+  /* max-width: 360 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 164, ../../sass/review-trip/flight-review.scss */
+  .review-details .details .airline-details li:nth-child(2) {
+    width: 23%;
+  }
+}
+@media only screen and (max-width: 360px) {
+  /* line 164, ../../sass/review-trip/flight-review.scss */
+  .review-details .details .airline-details li:nth-child(2) {
+    width: 21%;
+  }
+}
+/* line 173, ../../sass/review-trip/flight-review.scss */
+.review-details .details .airline-details li:last-child {
+  width: 25%;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 173, ../../sass/review-trip/flight-review.scss */
+  .review-details .details .airline-details li:last-child {
+    width: 33%;
+  }
+}
+/* line 182, ../../sass/review-trip/flight-review.scss */
+.review-details .details .amnities {
+  padding: 0.5em 0 0.5em 0;
+  margin: 0 0 0.5em 0;
+  display: block;
+  clear: both;
+}
+/* line 188, ../../sass/review-trip/flight-review.scss */
+.review-details .details .amnities li {
+  display: inline;
+  padding: 0 6px;
+  border-right: 1px solid #999999;
+  /* max-width: 360 */
+}
+@media only screen and (max-width: 360px) {
+  /* line 188, ../../sass/review-trip/flight-review.scss */
+  .review-details .details .amnities li {
+    margin: 3px 0;
+  }
+}
+/* line 195, ../../sass/review-trip/flight-review.scss */
+.review-details .details .amnities li:last-child {
+  border: none;
+  paddding-left: 0;
+}
+
+/* for modal close header */
+/* line 206, ../../sass/review-trip/flight-review.scss */
+.form-title-block {
+  text-align: left;
+  border-bottom: 1px solid #c6c6c6;
+  border-top: none !important;
+  position: relative;
+}
+/* line 211, ../../sass/review-trip/flight-review.scss */
+.form-title-block .form-title {
+  padding: 0.7em 0.6em;
+  font-size: 1.75em;
+}
+/* line 215, ../../sass/review-trip/flight-review.scss */
+.form-title-block .form-close {
+  position: absolute;
+  right: 2%;
+  background-position: -162px -65px;
+  top: 38%;
+  cursor: pointer;
+  @extent .ui-icon;
+}
+
+/* line 225, ../../sass/review-trip/flight-review.scss */
+#payment_overlay, #review-page {
+  padding-top: 118px !important;
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 229, ../../sass/review-trip/flight-review.scss */
+  #payment_overlay, #review-page {
+    padding-top: 87px !important;
+  }
+}
+@media only screen and (max-width: 360px) {
+  /* line 234, ../../sass/review-trip/flight-review.scss */
+  #payment_overlay, #review-page {
+    padding-top: 67px !important;
+  }
+}
+/* line 239, ../../sass/review-trip/flight-review.scss */
+.view-terms {
+  display: block;
+  width: 100%;
+  margin: 0px 0px 1em 9%;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 239, ../../sass/review-trip/flight-review.scss */
+  .view-terms {
+    margin: 0px 0px 1em 14%;
+  }
+}
+
+.total-amt{
+	position: absolute; 
+	right: 3em;
+	color:#333;
+}
+.cash-back{
+	margin: 1em 1em 0.4em 0.6em;
+	padding: 0.7em 0;
+	text-align: center;
+	font-size: 1.1em;
+	background: #F4F4F4;
+	border: 1px solid #D2D2D2;
+	width: 96%;
+	-webkit-border-radius: 1.3em;
+	-moz-border-radius: 1.3em;
+	-ms-border-radius: 1.3em;
+	-o-border-radius: 1.3em;
+	border-radius: 1.3em;
+	font-family: "Lato Bold";
+	color: #333;
+}
+.cash-back span{
+	color: #f9822e;
+}
+@media only screen and (max-width: 480px) {
+	.cash-back{
+		font-size: 1em;
+	}
+}
+
+#promoCodeModal-popup{
+	top: 0 !important;
+}
+
+.disc-txt {
+    font-size: 1.75em;
+    margin: 1.5em auto;
+    text-align: center;
+    width: 80%;
+}
+.disc-txt.disc-txt {
+    display: none;
+}
+.disc-txt.ecash-txt{
+	display: block;
+}
+
+#promoCodeModal-popup .or-sep{
+	margin-bottom: 4em!important;
+}
+.btn-drk-grey .ui-btn{
+	background: #666!important;
+	text-shadow: none!important;
+}
+
+#promoCodeModal-popup .icb-txt {
+  color: #666666;
+  display: none;
+  font-size: 16px;
+  padding-bottom: 17px;
+  text-align: center;
+}
+.yt-ui-content #splPnrMsg{
+	display:none;
+}
+.yt-ui-content #splPnrMsg p span{
+	color: #0396b6;
+}
+@media screen and (min-width: 500px) and (max-width: 1599px){
+#aggati_banner {
+    background: #fbface no-repeat scroll center;
+    clear: both;
+    display: block;
+    font-size: 15.2px;
+    padding: 5px 0 5px 33px;
+    width: 95%;
+    margin-left: 16px;
+    margin-bottom: -8px;
+    margin-top: 5px;
+}
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px){
+#aggati_banner {
+    background: #fbface none no-repeat scroll center center;
+    clear: both;
+    display: block;
+    font-size: 15.2px;
+    margin-bottom: -8px;
+    margin-left: 16px;
+    margin-top: 5px;
+    padding: 5px 0 5px 33px;
+    width: 82%;
+}
+
+/* IMAGES */
+/* FONTS */
+/*	COLOR 	*/
+/*	BORDER 	*/
+/*		FONTS	*/
+/*	POSITION	*/
+/*	SCREEN SIZE	*/
+/*	*****	MEDIA MIXINS	*****	*/
+/* ***** OVER FOLLOW HIDDEN MIXINS ***** */
+/*-- HEADER START HERE --*/
+/* line 6, ../../sass/yt-css/header.scss */
+.yt-ui-mobile {
+  /* max-width: 480 */
+  /* max-width: 360 */
+}
+/* line 9, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .ui-header .ui-title, .yt-ui-mobile .ui-footer .ui-title {
+  margin: 0 auto;
+}
+/* line 13, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-footer.ui-footer {
+  border-top: 0px solid #DDDDDD;
+}
+/* line 16, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-header {
+  border-color: #c4c4c4 !important;
+  /*margin-top:-2px;*/
+  top: -1px !important;
+  padding-top: 1px !important;
+  z-index: 9999 !important;
+  background-color: white !important;
+  /* new srp info header */
+  /* eof new srp info header */
+}
+/* line 23, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-header .ui-title {
+  font-size: 2.250em;
+  padding: 1em 0;
+  /* max-width: 480 */
+  /* max-width: 360 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 23, ../../sass/yt-css/header.scss */
+  .yt-ui-mobile .yt-header .ui-title {
+    font-size: 1.625em;
+  }
+}
+@media only screen and (max-width: 360px) {
+  /* line 23, ../../sass/yt-css/header.scss */
+  .yt-ui-mobile .yt-header .ui-title {
+    font-size: 1.250em;
+  }
+}
+/* line 33, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-header .menu-open {
+  background-color: white !important;
+  background-position: 1px -374px !important;
+  width: 76px !important;
+  height: 56px !important;
+  border: none;
+  position: absolute;
+  top: 38%;
+  left: 20px;
+  /* max-width: 480 */
+  margin: -13px 0 0 !important;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 33, ../../sass/yt-css/header.scss */
+  .yt-ui-mobile .yt-header .menu-open {
+    left: 10px;
+    background-position: 0 -192px !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 33, ../../sass/yt-css/header.scss */
+  .yt-ui-mobile .yt-header .menu-open {
+    height: 35px !important;
+    width: 40px !important;
+    top: 46%;
+  }
+}
+/* line 54, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-header .menu-open:after {
+  display: none;
+}
+/* line 59, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-header .menu-with-logo {
+  background-position: 0 -192px !important;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 59, ../../sass/yt-css/header.scss */
+  .yt-ui-mobile .yt-header .menu-with-logo {
+    background-position: 0 -374px !important;
+
+  }
+}
+/* line 66, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-header .menu-open:focus {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+/* line 69, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-header .menu-no-logo {
+  background-color: white !important;
+  background-position: 0 -373px !important;
+  width: 76px !important;
+  height: 56px !important;
+  border: none;
+  position: absloute;
+  top: 39%;
+  left: 20px;
+  margin: -13px 0 0 !important;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 69, ../../sass/yt-css/header.scss */
+  .yt-ui-mobile .yt-header .menu-no-logo {
+    height: 42px !important;
+    width: 46px !important;
+    top: 44%;
+  }
+}
+/* line 86, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-header .menu-no-logo:after {
+  display: none;
+}
+/* line 91, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-header .menu-no-logo:focus {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+/* line 94, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-header .ui-icon-lowest-fare {
+  background-color: white;
+  position: absolute;
+  margin-top: 0;
+  top: 36px;
+  right: 20px;
+  /* max-width: 480 */
+  float: right;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  width: 53px !important;
+  height: 49px !important;
+  /* max-width: 480 */
+  /* max-width: 360 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 94, ../../sass/yt-css/header.scss */
+  .yt-ui-mobile .yt-header .ui-icon-lowest-fare {
+    right: 0 !important;
+  }
+}
+/* line 109, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-header .ui-icon-lowest-fare:after {
+  display: none;
+}
+@media only screen and (max-width: 480px) {
+  /* line 94, ../../sass/yt-css/header.scss */
+  .yt-ui-mobile .yt-header .ui-icon-lowest-fare {
+    top: 18px;
+    right: 20px;
+    width: 36px !important;
+    height: 36px !important;
+  }
+}
+@media only screen and (max-width: 360px) {
+  /* line 94, ../../sass/yt-css/header.scss */
+  .yt-ui-mobile .yt-header .ui-icon-lowest-fare {
+    top: 1px;
+    right: 15px;
+  }
+}
+/* line 125, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-header .menu-with-back {
+  background-position: 0 -474px !important;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 125, ../../sass/yt-css/header.scss */
+  .yt-ui-mobile .yt-header .menu-with-back {
+    left: 5px !important;
+  }
+}
+/* line 131, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-header .leg-info {
+  text-align: center;
+  padding: 1.7em 0;
+  font-weight: normal;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 131, ../../sass/yt-css/header.scss */
+  .yt-ui-mobile .yt-header .leg-info {
+    padding: 0.5em 0;
+  }
+}
+/* line 139, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-header .city-info {
+  font-size: 1.3em;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 139, ../../sass/yt-css/header.scss */
+  .yt-ui-mobile .yt-header .city-info {
+    font-size: 1.2em;
+    width: 70%;
+    margin: 0 auto;
+  }
+  /* line 145, ../../sass/yt-css/header.scss */
+  .yt-ui-mobile .yt-header .city-info .dep, .yt-ui-mobile .yt-header .city-info .ret {
+    width: 40%;
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  /* line 152, ../../sass/yt-css/header.scss */
+  .yt-ui-mobile .yt-header .city-info .dep {
+    text-align: right;
+  }
+  /* line 155, ../../sass/yt-css/header.scss */
+  .yt-ui-mobile .yt-header .city-info .ret {
+    text-align: left;
+  }
+}
+/* line 160, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-header .city-info .ui-icon {
+  height: 11px !important;
+}
+/* line 164, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-header .pax-info {
+  display: block;
+  margin-top: 0.6em;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 164, ../../sass/yt-css/header.scss */
+  .yt-ui-mobile .yt-header .pax-info {
+    margin-top: 0.2em;
+  }
+}
+/* line 171, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-header .filter-btn {
+  width: 60px !important;
+  height: 56px !important;
+  background: white;
+  overflow: visible;
+  text-align: left;
+  border: none;
+  position: absolute;
+  top: 29%;
+  right: 15px;
+  padding: 0;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 171, ../../sass/yt-css/header.scss */
+  .yt-ui-mobile .yt-header .filter-btn {
+    height: 39px !important;
+    width: 46px !important;
+    top: 11%;
+    right: -5px!important;
+  }
+}
+/* line 190, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-header .filter-btn .ui-icon-tick {
+  display: none;
+}
+/* line 193, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-header .filter-btn .filter-txt {
+  color: #333333;
+  display: block;
+  font-size: 1.2em;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 193, ../../sass/yt-css/header.scss */
+  .yt-ui-mobile .yt-header .filter-btn .filter-txt {
+    font-size: 0.9em;
+  }
+}
+/* line 203, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-header .filter-btn.selected .ui-icon-tick {
+  display: block;
+  position: absolute;
+  right: 14%;
+  top: 21%;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 203, ../../sass/yt-css/header.scss */
+  .yt-ui-mobile .yt-header .filter-btn.selected .ui-icon-tick {
+    top: 33%;
+    right: 18%;
+  }
+}
+/* line 218, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-menu-panel {
+  background-color: #f8f8f8;
+  z-index: 10;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /*
+  -webkit-overflow-scrolling: touch;
+   > * {
+   	-webkit-transform: translateZ(0px);
+  }*/
+}
+/* line 229, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-menu-panel.ui-panel-position-left {
+  border-right: 1px solid #c4c4c4;
+  -webkit-box-shadow: -10px 0 10px 2px #eeeeee inset;
+  -moz-box-shadow: -10px 0 10px 2px #eeeeee inset;
+  box-shadow: -10px 0 10px 2px #eeeeee inset;
+}
+/* line 233, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-menu-panel.ui-panel-position-right {
+  border-left: 1px solid #c4c4c4;
+  -webkit-box-shadow: 10px 0 10px 2px #eeeeee inset;
+  -moz-box-shadow: 10px 0 10px 2px #eeeeee inset;
+  box-shadow: 10px 0 10px 2px #eeeeee inset;
+}
+/* line 237, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-menu-panel .ui-panel-inner {
+  border-right: none !important;
+  box-shadow: none !important;
+}
+/* line 240, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-menu-panel .ui-panel-inner .menu-list, .yt-ui-mobile .yt-menu-panel .ui-panel-inner .user-info {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  border: none;
+  margin: 0 0 2.3em !important;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 240, ../../sass/yt-css/header.scss */
+  .yt-ui-mobile .yt-menu-panel .ui-panel-inner .menu-list, .yt-ui-mobile .yt-menu-panel .ui-panel-inner .user-info {
+    margin: 0 0 0.725em !important;
+  }
+}
+/* line 248, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-menu-panel .ui-panel-inner .menu-list li, .yt-ui-mobile .yt-menu-panel .ui-panel-inner .user-info li {
+  background: #fff;
+  border: none;
+  position: relative;
+  border-bottom: none;
+}
+/* line 253, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-menu-panel .ui-panel-inner .menu-list li a, .yt-ui-mobile .yt-menu-panel .ui-panel-inner .user-info li a {
+  background: #fff;
+  font: normal 1.25em "Lato Light" !important;
+  padding: 21px 50px 21px 65px;
+  color: #0396b6;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 253, ../../sass/yt-css/header.scss */
+  .yt-ui-mobile .yt-menu-panel .ui-panel-inner .menu-list li a, .yt-ui-mobile .yt-menu-panel .ui-panel-inner .user-info li a {
+    padding: 12px 26px 12px 43px;
+  }
+}
+/* line 262, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-menu-panel .ui-panel-inner .menu-list li a:after, .yt-ui-mobile .yt-menu-panel .ui-panel-inner .user-info li a:after {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-image: url(../../images/icons-32.png);
+  width: 32px !important;
+  height: 32px !important;
+  /* max-width: 480 */
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  margin-top: -16px;
+  background-position: -32px 0;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 262, ../../sass/yt-css/header.scss */
+  .yt-ui-mobile .yt-menu-panel .ui-panel-inner .menu-list li a:after, .yt-ui-mobile .yt-menu-panel .ui-panel-inner .user-info li a:after {
+    background-image: url(../../images/icons-24.png);
+    width: 24px !important;
+    height: 24px !important;
+    /* start retina sprite */
+    /* eof retina sprite */
+  }
+}
+@media only screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 480px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 480px) and (-o-min-device-pixel-ratio: 200 / 100), only screen and (max-width: 480px) and (min-device-pixel-ratio: 2) {
+  /* line 262, ../../sass/yt-css/header.scss */
+  .yt-ui-mobile .yt-menu-panel .ui-panel-inner .menu-list li a:after, .yt-ui-mobile .yt-menu-panel .ui-panel-inner .user-info li a:after {
+    background: url(../../images/icons-24@2x-v1.png);
+    -webkit-background-size: 320px 640px;
+    -moz-background-size: 320px 640px;
+    background-size: 320px 640px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 262, ../../sass/yt-css/header.scss */
+  .yt-ui-mobile .yt-menu-panel .ui-panel-inner .menu-list li a:after, .yt-ui-mobile .yt-menu-panel .ui-panel-inner .user-info li a:after {
+    margin-top: -12px;
+  }
+}
+/* line 273, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-menu-panel .ui-panel-inner .menu-list li a:hover, .yt-ui-mobile .yt-menu-panel .ui-panel-inner .menu-list li a:focus, .yt-ui-mobile .yt-menu-panel .ui-panel-inner .user-info li a:hover, .yt-ui-mobile .yt-menu-panel .ui-panel-inner .user-info li a:focus {
+  -webkit-box-shadow: inset 0 0 4px 0 #cccccc;
+  -moz-box-shadow: inset 0 0 4px 0 #cccccc;
+  box-shadow: inset 0 0 4px 0 #cccccc;
+}
+/* line 277, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-menu-panel .ui-panel-inner .menu-list li a p, .yt-ui-mobile .yt-menu-panel .ui-panel-inner .user-info li a p {
+  margin: 0 !important;
+}
+/* line 279, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-menu-panel .ui-panel-inner .menu-list li a p.heading, .yt-ui-mobile .yt-menu-panel .ui-panel-inner .user-info li a p.heading {
+  font-size: 1em;
+  color: #666666;
+}
+/* line 282, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-menu-panel .ui-panel-inner .menu-list li a p.heading span, .yt-ui-mobile .yt-menu-panel .ui-panel-inner .user-info li a p.heading span {
+  color: #0396b6;
+}
+/* line 288, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-menu-panel .ui-panel-inner .menu-list li .height93, .yt-ui-mobile .yt-menu-panel .ui-panel-inner .user-info li .height93 {
+  padding: 15px 50px 15px 65px;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 288, ../../sass/yt-css/header.scss */
+  .yt-ui-mobile .yt-menu-panel .ui-panel-inner .menu-list li .height93, .yt-ui-mobile .yt-menu-panel .ui-panel-inner .user-info li .height93 {
+    padding: 12px 50px 12px 43px;
+  }
+}
+/* line 293, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-menu-panel .ui-panel-inner .menu-list li .height93 .sign-in, .yt-ui-mobile .yt-menu-panel .ui-panel-inner .menu-list li .height93 .sign-up, .yt-ui-mobile .yt-menu-panel .ui-panel-inner .user-info li .height93 .sign-in, .yt-ui-mobile .yt-menu-panel .ui-panel-inner .user-info li .height93 .sign-up {
+  color: #0396b6;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 293, ../../sass/yt-css/header.scss */
+  .yt-ui-mobile .yt-menu-panel .ui-panel-inner .menu-list li .height93 .sign-in, .yt-ui-mobile .yt-menu-panel .ui-panel-inner .menu-list li .height93 .sign-up, .yt-ui-mobile .yt-menu-panel .ui-panel-inner .user-info li .height93 .sign-in, .yt-ui-mobile .yt-menu-panel .ui-panel-inner .user-info li .height93 .sign-up {
+    display: block;
+  }
+}
+/* line 300, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-menu-panel .ui-panel-inner .menu-list li .ui-li-icon, .yt-ui-mobile .yt-menu-panel .ui-panel-inner .user-info li .ui-li-icon {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  float: left;
+  margin: -16px 0 0 15px;
+  z-index: 999;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 300, ../../sass/yt-css/header.scss */
+  .yt-ui-mobile .yt-menu-panel .ui-panel-inner .menu-list li .ui-li-icon, .yt-ui-mobile .yt-menu-panel .ui-panel-inner .user-info li .ui-li-icon {
+    margin-top: -11px;
+    left: -4px;
+  }
+}
+/* line 312, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-menu-panel .ui-panel-inner .menu-list li .ui-icon-key, .yt-ui-mobile .yt-menu-panel .ui-panel-inner .menu-list li .ui-icon-new-user, .yt-ui-mobile .yt-menu-panel .ui-panel-inner .user-info li .ui-icon-key, .yt-ui-mobile .yt-menu-panel .ui-panel-inner .user-info li .ui-icon-new-user {
+  margin-top: -22px;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 312, ../../sass/yt-css/header.scss */
+  .yt-ui-mobile .yt-menu-panel .ui-panel-inner .menu-list li .ui-icon-key, .yt-ui-mobile .yt-menu-panel .ui-panel-inner .menu-list li .ui-icon-new-user, .yt-ui-mobile .yt-menu-panel .ui-panel-inner .user-info li .ui-icon-key, .yt-ui-mobile .yt-menu-panel .ui-panel-inner .user-info li .ui-icon-new-user {
+    margin-top: -17px;
+  }
+}
+/* line 322, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-menu-panel .ui-panel-inner .user-item li a {
+  color: #999999 !important;
+}
+/* line 327, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-menu-panel .ui-panel-inner .user-info.ui-listview {
+  margin: 0 0 1.3em !important;
+}
+/* line 329, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-menu-panel .ui-panel-inner .user-info.ui-listview .ui-li-static {
+  min-height: 1.9em;
+  padding: 0;
+  background: none;
+}
+/* line 333, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-menu-panel .ui-panel-inner .user-info.ui-listview .ui-li-static img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  max-width: 68px;
+  max-height: 68px;
+  /* max-width: 360 */
+}
+@media only screen and (max-width: 360px) {
+  /* line 333, ../../sass/yt-css/header.scss */
+  .yt-ui-mobile .yt-menu-panel .ui-panel-inner .user-info.ui-listview .ui-li-static img {
+    max-width: 48px;
+    max-height: 48px;
+  }
+}
+/* line 342, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-menu-panel .ui-panel-inner .user-info.ui-listview .ui-li-static h2 {
+  margin: 0;
+  font: normal 1.25em "Lato Bold";
+  line-height: 1.35em;
+  color: #333333;
+}
+/* line 349, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-menu-panel .ui-panel-inner .user-info.ui-listview .ui-li-static.ui-li-has-thumb {
+  min-height: 2.9em;
+  padding: .7em 1em .7em 5.5em;
+  /* max-width: 480 */
+  /* max-width: 360 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 349, ../../sass/yt-css/header.scss */
+  .yt-ui-mobile .yt-menu-panel .ui-panel-inner .user-info.ui-listview .ui-li-static.ui-li-has-thumb {
+    padding: .7em 1em .7em 5em;
+  }
+}
+@media only screen and (max-width: 360px) {
+  /* line 349, ../../sass/yt-css/header.scss */
+  .yt-ui-mobile .yt-menu-panel .ui-panel-inner .user-info.ui-listview .ui-li-static.ui-li-has-thumb {
+    padding: .7em 1em .7em 4.5em;
+  }
+}
+/* line 358, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-menu-panel .ui-panel-inner .user-info.ui-listview .ui-li-static.ui-li-has-thumb h2 {
+  line-height: 2.35em;
+}
+/* line 370, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-menu-panel::-webkit-scrollbar {
+  opacity: 0;
+}
+/* line 375, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .yt-menu-panel::-webkit-scrollbar-track,
+.yt-ui-mobile .yt-menu-panel::-webkit-scrollbar-track-piece {
+  opacity: 0;
+}
+/* line 379, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .ui-icon-loading {
+  background: url(../../images/ajax-loader.gif);
+  background-size: 2.875em 2.875em;
+}
+/* line 384, ../../sass/yt-css/header.scss */
+.yt-ui-mobile .pad-top {
+  padding-top: 112px !important;
+}
+@media only screen and (max-width: 480px) {
+  /* line 386, ../../sass/yt-css/header.scss */
+  .yt-ui-mobile .pad-top {
+    padding-top: 68px !important;
+  }
+}
+@media only screen and (max-width: 360px) {
+  /* line 389, ../../sass/yt-css/header.scss */
+  .yt-ui-mobile .pad-top {
+    padding-top: 48px !important;
+  }
+}
+
+.yt-menu-panel .new-catg{
+	font-size:0.4em ;
+	background: #FF8C2E; 
+	color: #fff; 
+	text-shadow: none;
+	margin:-8px 0 0 5px;
+	position: relative;
+	top:-10px;
+	padding:1px 3px;
+}
+.usrEcash{
+	position: absolute; 
+	background: #15718c; 
+	color: #fff; 
+	text-shadow: none; 
+	padding: 2px 5px; 
+	right: 11%;
+}
+
+.yt-steps {
+  border-bottom: 1px solid #c6c6c6;
+}
+/* line 5, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps.allow-back-button {
+  padding: 0 0 0 12.18%;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 9, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps.allow-back-button .back-button {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 12.18%;
+  height: 100%;
+  background: white;
+  border-right: 1px solid #c6c6c6;
+  text-align: center;
+}
+/* line 19, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps.allow-back-button .back-button .ui-icon {
+  position: absolute;
+  top: 50%;
+  margin: -16px 0 0 -16px;
+  /* max-width: 480 */
+  left: 50%;
+}
+@media only screen and (max-width: 480px) {
+  /* line 19, ../../sass/yt-css/widgets/_steps.scss */
+  .yt-steps.allow-back-button .back-button .ui-icon {
+    margin: -12px 0 0 -12px;
+  }
+}
+

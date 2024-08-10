@@ -1,0 +1,345 @@
+/*common classes form layout starts here*/
+body{font-size:75%;font-family:Arial,Helvetica,sans-serif !important;;background-color:#fff;}
+.clear {clear: both; height:0px; line-height:0px; font-size:0px;}
+.flL{float:left;}
+.flR{float:right;}
+.flLI{float:left !important;}
+.flRI{float:right !important;}
+.mauto{margin:0 auto;}
+.b{font-weight:bold}
+ol, ul{ list-style: none;}
+a{color:#2D84B9; text-decoration:none;cursor:pointer;outline:none} 
+a:hover{text-decoration:underline; color:#ff820a;}
+.brdnone{border:none;}
+img{border:none;margin:0;padding:0;}
+.f11{font-size:11px;}
+
+*{margin:0;padding:0;}
+.mt3{margin-top:3px;}
+.mt5{margin-top:5px;}
+._mt5{//margin-top:5px}
+.mt7 {margin-top: 7px;}
+.mt10{margin-top:10px;}
+.mt15{margin-top:15px;}
+.mt20{margin-top:20px;}
+.mt25{margin-top:25px;}
+.mt3i{margin-top:3px\0/}
+.mt60{margin-top:60px;}
+
+.ml5{margin-left:5px;}
+.ml10{margin-left:10px;}
+.ml15{margin-left:15px;}
+
+.mr5{margin-right:5px;}
+.mr10{margin-right:10px;}
+.mr25{margin-right:25px;}
+.mr35{margin-right:35px;}
+
+.mb5{margin-bottom:5px;}
+.mb10{margin-bottom:10px;}
+.mb15{margin-bottom:15px;}
+
+.pl{padding:5px; text-align:right; width:112px}
+.pl5{padding-left:5px;}
+.pl10{padding-left:10px;}
+.pl12{padding-left:12px;}
+.pl15{padding-left:15px;}
+.pl20{padding-left:20px;}
+.pt3{padding-top:3px;}
+.pt5{padding-top:5px;}
+.pt10{padding-top:10px}
+.pr5{padding-right:5px;}
+.pb10{padding-bottom:10px;}
+.pd5{padding:5px;}
+.pbl3{float:left;padding-bottom:3px;}
+.pll5{padding:5px; text-align:left; display:block;width:100%;float:left}
+
+.wfull{width:100%;float:left}
+.w35{width:35px;}
+.w60{width:60px !important;}
+.w85{width:85px;}
+.w110{width:110px}
+.w135{width:135px;}
+.w150{width:150px;}
+.w160{width:160px !important;}
+.w220{width:220px !important;}
+.w303{width:303px;}
+.w420{width:420px;}
+.wauto{width:auto !important;}
+.relative{position:relative}
+.txt12{font-size:12px;}
+.txtorg24 {color: #F17C0E;font-size: 24px;}
+.fnb{font-weight:normal;}
+.tac{text-align:center;}
+
+.small {font-size: 10px;}
+.gray {color: #666}
+.horSeparator{border-bottom:1px solid #b6b6b6;height:1px;width:97%;float:left}
+.curNon{cursor:default !important;}
+
+input{color:#6d6d6d;width:auto;font-size:90%;box-shadow: 1px 2px 3px #D5D3D3}
+/*common classes form layout ends here*/
+
+.panel_continue {
+        
+        -moz-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+        -webkit-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+        box-shadow:inset 0px 1px 0px 0px #54a3f7;
+        
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #007dc1), color-stop(1, #0061a7));
+        background:-moz-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+        background:-webkit-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+        background:-o-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+        background:-ms-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+        background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#007dc1', endColorstr='#0061a7',GradientType=0);
+        
+        background-color:#007dc1;
+        
+        -moz-border-radius:3px;
+        -webkit-border-radius:3px;
+        border-radius:3px;
+        
+        border:1px solid #124d77;
+        cursor:pointer;
+        display:block;
+		float:right;
+        color:#ffffff;
+        font-family:arial;
+        font-size:13px;
+        font-weight:normal;
+        padding:6px 13px;
+        text-decoration:none;
+        width:100px !important;
+        text-shadow:0px 1px 0px #154682;
+    }
+.panel_continue:hover {
+        
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0061a7), color-stop(1, #007dc1));
+        background:-moz-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+        background:-webkit-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+        background:-o-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+        background:-ms-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+        background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0061a7', endColorstr='#007dc1',GradientType=0);
+        
+        background-color:#0061a7;
+    }
+.panel_continue:active {
+        position:relative;
+        top:1px;
+    }
+
+/*common input sgadow and hover effects starts here*/
+input[type="name"], input[type="email"], input[type="phone"], input[type="text"], input[type="password"]{border: 1px solid #aeaeb0; box-shadow: 1px 2px 3px #D5D3D3;}
+input[type="name"]:hover, input[type="email"]:hover, input[type="phone"]:hover, input[type="text"]:hover, input[type="password"]:hover{border: 1px solid #A0A0A0;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;}
+input[type="name"]:focus, input[type="email"]:focus, input[type="phone"]:focus, input[type="text"]:focus, input[type="password"]:focus{border:1px solid #4D90FE;
+-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+  -webkit-appearance: none;}
+
+select:focus, textarea:focus {
+border: 1px solid #4D90FE;-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+  -webkit-appearance: none;}
+
+select:hover, textarea:hover {
+border: 1px solid #A0A0A0;
+box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+}
+/*common input sgadow and hover effects ends here*/
+
+
+/*payment css starts here*/
+.pmt_payTabFull {float: left;margin-top: 17px;width: 720px;}
+.pmt_payTabFull ul {background-repeat: repeat-x;border: 1px solid #D8D8D8;border-top-left-radius: 6px;border-top-right-radius: 6px;float: left;width: 708px;box-shadow:0 22px 25px 0 #FFFFFF inset;background-color:#EEEEEE;padding:5px;border-bottom:none;}
+.pmt_payTabFull ul li {color: #000000;font-size: 16px;font-weight: normal;outline: medium none;padding: 7px 10px;width: auto;}
+.pmt_payTabContentBox {border:1px solid #D8D8D8;clear: both;float: left;width: 718px;min-height:250px;}
+.pmt_payTabContentBox .pmt_tabContainer {-moz-border-bottom-colors: none;-moz-border-right-colors: none;-moz-border-top-colors: none;border-color: #D7D7D7;border-image: none;border-style: none solid none none;border-width: 1px;float: left;position: relative;width: 124px;}
+.pmt_tabContainer ul  li.dactive a:hover{background-color:#f6f6f6;box-shadow:0 22px 25px 0 #FFFFFF inset;}
+.pmt_tabContainer ul li.active a{background-color: #FFFFFF;background-image: none;border-left:none;color: #000000;font-weight: bold;height: 12px;width: 105px;border-right:none}
+.pmt_tabContainer ul li a{-moz-border-bottom-colors: #DFE6D4;-moz-border-right-colors: #DFE6D4;-moz-border-top-colors: #DFE6D4;border-color: -moz-use-text-color #DFE6D4 #DFE6D4;border-image: none;border: 1px solid #DFE6D4;border-style: none solid solid;border-width: medium 1px 1px;color: #0072BB;float: left;height: 13px;margin: 0;padding: 15px 10px;text-decoration: none;width: 104px;font-weight:bold;background-color: #EEEEEE;box-shadow:0 22px 25px 0 #FFFFFF inset;}
+.pmt_notificationbox{background-color: #fcffac; border: 1px solid #f4ec9b; border-radius: 5px 5px 5px 5px; float: left;font-size: 12px; padding:5px; margin: 10px 0 15px 120px;width:66%;}
+.NewPaytabbox{width:553px;float:left;padding:10px 10px 10px 10px;margin-left:20px;text-align:left;font-size:90%}
+.pmt_banking{float:left;width:550px;}
+.pmt_banking ul{width:100%;float:left;}
+.pmt_banking ul li{float:left;width:100%;padding:10px 0 0 0;_padding:5px 0 0 0;width:33%}
+.pmt_inputTxtBox {border: 1px solid #ABADB3;color: #6D6D6D;float: left;font-size: 11px !important;font-weight: normal;padding: 6px 5px;width: 210px;float:left;border-radius: 3px;}
+.pmt_rewardTxtBox {background-color:#eeeeee;}
+.pmt_card_paymentDiv {background: #fff;float:left}
+.pmt_card_paymentDiv label {display: block;}
+.pmt_card_paymentDiv input.text {width: 200px;height: 20px;}
+.pmt_adjustCard {margin: -3px 0 0 5px}
+.pmt_boxCard {margin:0 0 0 5px;float:left}
+.pmt_inlineBlock {position: relative;display: -moz-inline-stack;zoom: 1;display: inline-block;*display:inline;cursor: default;float:left}
+.pmt_pRow{margin:0 0 10px 0;float:left;width: 100%;}
+.pmt_pRow33{margin:0 0 10px 0;float:left;width: 33%;}
+.pmt_card_ui{float:left}
+.pmt_paymentnote{margin:10px 0 0 0;color:#fd0402;font-size:90%;}
+.pmt_amexAddress{width:540px;background-color:#ffffff;float:left;padding:5px 5px 5px 0;margin-bottom:5px;}
+.pmt_amex_card{padding:5px;background-color:#F4F4F4;}
+
+/* Added to disable cardType */
+.pmt_deselect{opacity:0.13;filter: alpha(opacity=25);}
+.pmt_bttndisabled{        
+        
+        background-color:##C3C4C4;
+        
+        -moz-border-radius:3px;
+        -webkit-border-radius:3px;
+        border-radius:3px;
+        
+        border:1px solid #b6b6b6;
+        cursor:pointer;
+        display:block;
+		float:right;
+        color:#000000;
+        font-family:arial;
+        font-size:13px;
+        font-weight:normal;
+        padding:6px 13px;
+        text-decoration:none;
+        width:100px;}
+
+/*css specifications for banks logo */ 
+.icici-net, .hdfc-net, .citi-net, .sbi-net, .axis-net, .kotak-net{background:url(../images/payment.gif) no-repeat;cursor: default;margin-left:5px; }
+.icici-net{background-position:0px -49px;width:105px;height:35px;display:block;float:left}
+.hdfc-net{background-position:0px -89px;width:105px;height:35px;display:block;float:left}
+.citi-net{background-position:0px -127px;width:105px;height:35px;display:block;float:left}
+.sbi-net{background-position:0px -165px;width:105px;height:35px;display:block;float:left}
+.axis-net{background-position:0px -200px;width:105px;height:35px;display:block;float:left}
+.kotak-net{background-position:0px -7px;width:105px;height:35px;display:block;float:left}
+
+/* cardType and cvv logos */ 
+.visa_cc, .mastercard_cc, .amex_cc, .maestro_cc,.diners_club_international_cc , .logo_airtel, .logo_citi, .pay_cvvno, .amex-cvv-no,.QbookVisa,.QbookMastercard,.QbookAmex,.QbookMaest{background:url(../images/payment.gif) no-repeat; position: relative;display: -moz-inline-stack;zoom: 1;display: inline-block;*display:inline;cursor: default; width:44px; height:27px;margin-right:5px;float:left}
+.visa_cc{background-position:-9px -301px;}
+.mastercard_cc{background-position:-9px -237px;}
+.amex_cc{background-position:-9px -361px;}
+.maestro_cc{background-position:-9px -423px;}
+.diners_club_international_cc{background-position:-57px -272px;}
+.pay_cvvno{background-position: -54px -234px;}
+.amex-cvv-no{background-position:-56px -363px;}
+
+/* logos for other Payment Options */
+.logo_airtel{background-position: 0px -493px;width:114px;height:40px;}
+.logo_ezeClick{background:url(../images/amex-eze-click.gif) no-repeat;width:110;height:33px;display:block;float:left;margin-right:30px;width: 110px !important;}
+.logo_citi{background-position: -5px -715px;width:99px;height:28px;}
+
+.pmt_detail-info-cont {float:right;width: 210px;background-color:#F7F7F7;border:1px solid #DFDBDB;border-radius:5px;margin-top:17px;}
+.pmt_detail-info-cont .pmt_booking-summary-header {background-color: #2379C5;border: 1px solid #2379C5;border-top-left-radius: 4px;border-top-right-radius: 4px;color: #FFFFFF;float: left;font-size: 130%;font-weight: bold;padding: 8px 5px;width: 198px;}
+.pmt_detail-info-cont .pmt_box {background-color: #FFFFFF;border:1px solid #DFDBDB;border-radius:5px;float: left;padding:8px 5px;width: 187px;text-align:right;margin:5px 5px 5px 5px}
+.pmt_detail-info-cont .pmt_box img{float:left;width:38px;height:38px;}
+.pmt_detail-info-cont .pmt_pattern2 {float:right;width:130px;font-weight:bold}
+.pmt_detail-info-cont .pmt_pattern3 {float:right;width:130px;color:#717171;margin-top:5px;}
+.pmt_detail-info-cont .pmt_pattern4 {float:right;width:186px;}
+.pmt_detail-info-cont .pmt_pattern4 span:first-child{float:left;text-align:left}
+.pmt_detail-info-cont .pmt_pattern5 {float:right;width:186px;}
+.pmt_detail-info-cont .pmt_pattern5 div{background-color: #0071BE;border-radius: 2px 2px 2px 2px;color: #FFFFFF;cursor: pointer;float: right;margin-right: 5px;padding: 0 4px;text-align: center;width: 8px;}
+.pmt_detail-info-cont .pmt_pattern5 span{float:left;text-align:left;color:#2D84B9;font-weight:bold;background-color:#fff;}
+.pmt_detail-info-cont .pmt_booking-summary-footer {float:right;width:190px;color:#F17C0E;font-size:24px;text-align:right;padding:10px;}
+.pmt_detail-info-cont .pmt_booking-summary-footer span:first-child{float:left;text-align:left;color:#000;font-size:12px;font-weight:bold;margin-top:5px;}
+.pmt_sep-pay{border-bottom: 1px solid #DFDFDF;height:1px;float:left;width:100%;margin:5px 0;}
+
+.pmt_bttn200{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                color: #ffffff;
+                padding: 10px 20px;
+                width:187px;
+                cursor:pointer;
+                background: -moz-linear-gradient(
+                                top,
+                                #246190 0%,
+                                #285e90);
+                background: -webkit-gradient(
+                                linear, left top, left bottom, 
+                                from(#246190),
+                                to(#285e90));
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                border-radius: 5px;
+                border: 0px solid #171717;
+                -moz-box-shadow:
+                                0px 1px 3px rgba(000,000,000,0.1),
+                                inset 0px 0px 10px rgba(087,087,087,0.1);
+                -webkit-box-shadow:
+                                0px 1px 3px rgba(000,000,000,0.1),
+                                inset 0px 0px 10px rgba(087,087,087,0.1);
+                box-shadow:
+                                0px 1px 3px rgba(000,000,000,0.1),
+                                inset 0px 0px 10px rgba(087,087,087,0.1);
+                text-shadow:
+                                0px -1px 0px rgba(000,000,000,0.1),
+                                0px 1px 0px rgba(255,255,255,0.3);
+}
+
+/*Merchant Payment page*/
+.pmt_ytWrapper{width:990px;margin:0 auto;}
+.pmt_mainContainer{float:left;width:970px;padding-bottom:0px; padding:0 10px 0 10px;margin:0;background-repeat:repeat-y;background-position:left top; height:100%}
+.pmt_ytContent{float:left;width:950px;padding:10px;height:auto !important;margin-bottom:25px;min-height:530px; background-color:#FFFFFF;}
+.pmt_Paymentdiv{width:540px;float:left;}
+
+/*Validation error Box*/ 
+div.pmt_errorlist {margin:-25px 0 0 5px;height:auto;background:#FF5B3B;color:#fff;max-width:150px;width:auto;font-family:tahoma;font-size:10px;border:1px solid #ddd;box-shadow:0px 0px 6px #000;-moz-box-shadow: 0px 0px 6px #000;-webkit-box-shadow: 0px 0px 6px #000;border-radius:6px;-moz-border-radius: 6px;-webkit-border-radius:6px;word-wrap:break-word;padding:4px;z-index:99999;}
+div.pmt_errorlist{position:absolute;opacity: 0.87}
+div.pmt_defErrorlist {margin:-25px 0 0 5px;height:auto;background:#FF5B3B;color:#fff;max-width:150px;width:auto;font-family:tahoma;font-size:10px;border:1px solid #ddd;box-shadow:0px 0px 6px #000;-moz-box-shadow: 0px 0px 6px #000;-webkit-box-shadow: 0px 0px 6px #000;border-radius:6px;-moz-border-radius: 6px;-webkit-border-radius:6px;word-wrap:break-word;padding:4px;z-index:99999;}
+div.pmt_defErrorlist{position:absolute;opacity: 0.87}
+
+.pmt_errMsgBlock{background:url("../images/error-red-ico.png") no-repeat scroll 3px 3px;padding:5px 10px 5px 33px;background-color:#FEF2F4;border:1px solid #D2B5BA;margin-top:13px;margin-bottom:13px;color:#fd0402;font-size:12px;font-weight:bold;width: 500px;}
+.pmt_warningMsgBlock{background:url("../images/warning-icon.gif") no-repeat scroll 3px 3px;padding:5px 10px 5px 33px;background-color:#FEF2F4;border:1px solid #D2B5BA;margin-top:13px;margin-bottom:13px;color:#0101DF;font-size:12px;font-weight:bold;width: 500px;}
+
+@font-face{font-family:'WebRupee';src: url('../images/rupee/WebRupee.V2.0.eot');src: local('WebRupee'), url('../images/rupee/WebRupee.V2.0.ttf') format('truetype'),  url('../images/rupee/WebRupee.V2.0.woff') format('woff'), url('../images/rupee/WebRupee.V2.0.svg') format('svg'); font-weight:normal; font-style:normal;}
+.pmt_RupeeSign{font-family:'WebRupee';margin:0;padding:0;}
+
+.logo_buzzintown{background: url("../images/bitLogo.png") no-repeat scroll 3px 3px transparent;color: #FD0402;font-size: 12px;height: 77px;left: 10px;position: absolute;width: 212px;}
+.logo_yatra{background: url("../images/yt_logo_sma.gif") no-repeat scroll 3px 3px transparent;height: 50px;left: 10px;margin-bottom: 13px;margin-top: 13px;position: absolute;width: 170px;}
+.logo_intech{background: url("../images/eviivo.gif") no-repeat scroll 3px 3px transparent;height: 50px;left: 10px;margin-bottom: 13px;margin-top: 13px;position: absolute;width: 170px;}
+.userDetail{width:100%;float:left;margin-top:20px}
+.userDetail li{width:33%;float:left;}
+.userDetail li span input[type="text"]{width:160px;float:left;}
+
+.cvvdisplayMsg{ float: left;left: 30%;position: relative;width: 400px; margin-bottom: 10px;}
+    
+.panel_w180{width:180px !important;}
+.dropdown-menu{box-shadow: 1px 3px 3px #B6B6B6 ;border-radius: 0 0 6px 6px }
+
+.pmt_emiOptn {
+    float: left;
+    margin: 15px 0;
+	background-color:#eeeeee;
+	width:530px;
+	padding:10px;
+	font-family:arial;
+}
+.pmt_emiOptn table {
+    display: inline-block;
+    font-size: 12px;
+    width: 530px;
+	border-collapse:collapse;
+}
+
+.pmt_emiOptn table tr {
+    width: 100%;
+}
+.pmt_emiOptn table tr th {
+    text-align: left;
+    width: 135px;
+}
+.pmt_emiOptn table tr th.lastTd {
+    width: 145px;
+}
+.pmt_emiOptn table tr td {
+    text-align: left;
+	font-weight: normal;
+}
+.pmt_emiOptn .pmt_addtMsg {
+    color: #FF820A;
+    font-size: 11px;
+}
+
+.pmt_emiOptn a {
+    float: right;
+    font-size: 12px;
+}

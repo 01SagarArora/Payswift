@@ -1,0 +1,16 @@
+{
+    "success": "true",
+    "ttid": "1115898228",
+    "s2s": "true",
+    "s2sUrl": "http://flight.payment.yatra.com/air-pay-book-service/dom2/confirm/getResponseFromPaymentPortal?s2s=true",
+    "s2sOnFailure": "false",
+    "rurl": "https://secure.yatra.com/checkout-ui/dom2/confirmation?searchId=3a83427e-8057-4729-b7d4-5c8700d51690&pricingId=06c5fe53-7088-421d-bbcf-bf0124a077ca",
+    "httpMethod": "POST",
+    "redirect": "true",
+    "amountToCollect": "1",
+    "convFee": 230,
+    "pmUCSuccess": "false",
+    "pricingURL": "https://secure.yatra.com/checkout-ui/dom2/price?searchId=3a83427e-8057-4729-b7d4-5c8700d51690&msid=3dddf7d8-08d8-484c-bee8-6276cf20f747&mode=Background&bpc=false&isSR=false&unique=1510907676168&variation=0&flightIdCSV=DELBOM6E99320180212_6EAPI&flightPrice=4986&sc=6EAPI&pid=06c5fe53-7088-421d-bbcf-bf0124a077ca&ref=15898228&cf=0&unique=53dd5156-8093-4470-b2b0-74a01d95d844",
+    "pmUCMessage": "Lock is not present",
+    "errorParam": {}
+}

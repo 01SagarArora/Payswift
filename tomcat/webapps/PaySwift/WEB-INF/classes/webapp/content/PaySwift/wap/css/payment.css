@@ -1,0 +1,2507 @@
+/* IMAGES */
+/* FONTS */
+/*	COLOR 	*/
+/*	BORDER 	*/
+/*		FONTS	*/
+/*	POSITION	*/
+/*	SCREEN SIZE	*/
+/*	*****	MEDIA MIXINS	*****	*/
+/* ***** OVER FOLLOW HIDDEN MIXINS ***** */
+/* line 3, ../../sass/yt-css/widgets/_steps.scss */
+
+/* line 192, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.redeem-block {
+  padding: 1em;
+}
+/* line 194, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.redeem-block label {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+/* line 198, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.redeem-block .total-txt {
+  font-family: "Lato Light";
+}
+/* line 201, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.redeem-block .total-due {
+  color: #666666;
+  font-size: 1.75em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #e2e2e2;
+  margin-bottom: 0.75em;
+}
+/* line 208, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.redeem-block .total-bal {
+  font-family: "Lato Bold";
+  color: #333;
+}
+/* line 211, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.redeem-block .total-bal .rs {
+  color: #f9822e !important;
+}
+/* line 215, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.redeem-block .redeem-btn {
+  width: 50%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 360px) {
+	.redeem-block .redeem-btn  .ui-btn{
+		font-size: 1.2em !important;
+		padding: 0 !important;
+	}
+}
+/* line 220, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.redeem-block #redeem-slider .min {
+  font-size: 1.5em;
+  color: #333;
+}
+/* line 223, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.redeem-block #redeem-slider .min .rs {
+  color: #f9822e !important;
+}
+/* line 227, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.redeem-block #redeem-slider .max {
+  font-size: 1.5em;
+  color: #333;
+  float: right !important;
+}
+/* line 231, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.redeem-block #redeem-slider .max .rs {
+  color: #f9822e !important;
+}
+/* line 237, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.redeem-block .success-block .success-msg {
+  font-size: 1.5em;
+  color: #333;
+}
+/* line 240, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.redeem-block .success-block .success-msg .redem-point-used {
+  color: #f9822e !important;
+}
+/* line 244, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.redeem-block .success-block .cancel-redem {
+  color: #0194b5;
+    cursor: pointer;
+    font-size: 1.5em;
+    margin: 1.5em auto;
+    position: relative;
+    width: 50%;
+  /* max-width: 480 */
+  /* max-width: 360 */
+}
+.redeem-block .success-block .cancel-redem .ico-Crosss{
+	background-image: url("../images/icons-32.png");
+    background-position: -258px -35px;
+    display: block;
+    height: 26px;
+    left: 0;
+    position: absolute;
+    top: 6px;
+    width: 26px;
+	
+}
+@media only screen and (max-width: 480px) {
+.redeem-block .success-block .cancel-redem .ico-Crosss{
+	background-image: url(../images/icons-24.png);
+	top:0px !important;
+}
+}
+.yt-steps {
+  border-bottom: none;
+}
+/* line 5, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps.allow-back-button {
+  padding: 0 0 0 15.18%;
+  /* max-width: 480 */
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 480px) {
+  /* line 5, ../../sass/yt-css/widgets/_steps.scss */
+  .yt-steps.allow-back-button {
+    padding: 0 0 0 13.5%;
+  }
+}
+/* line 12, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps.allow-back-button .back-button {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 12.18%;
+  height: 100%;
+  background: white;
+  border-right: 1px solid #c6c6c6;
+  text-align: center;
+}
+/* line 22, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps.allow-back-button .back-button .ui-icon {
+  position: absolute;
+  top: 50%;
+  margin: -16px 0 0 -16px;
+  /* max-width: 480 */
+  left: 50%;
+}
+@media only screen and (max-width: 480px) {
+  /* line 22, ../../sass/yt-css/widgets/_steps.scss */
+  .yt-steps.allow-back-button .back-button .ui-icon {
+    margin: -12px 0 0 -12px;
+  }
+}
+/* line 33, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps {
+  padding: 1.5em 3em .50em 2em;
+  float: left;
+  /* max-width: 480 */
+  font-size: 1em;
+  background: white;
+  list-style: none;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+}
+@media only screen and (max-width: 480px) {
+  /* line 33, ../../sass/yt-css/widgets/_steps.scss */
+  .yt-steps .steps {
+    padding: 1em 2em 0;
+  }
+}
+/* line 45, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li {
+  width: 44%;
+  padding: 0;
+  float: left;
+  color: #999999;
+  position: relative;
+}
+/* line 51, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li .tapable {
+  display: block;
+  position: absolute;
+  top: -2px;
+  width: 45px;
+  height: 45px;
+  z-index: 9;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 51, ../../sass/yt-css/widgets/_steps.scss */
+  .yt-steps .steps li .tapable {
+    width: 32px;
+    height: 32px;
+  }
+}
+/* line 63, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li .counter {
+  height: 2px;
+  margin-top: 20px;
+  /* max-width: 480 */
+  background: #e2e2e2;
+  position: relative;
+}
+@media only screen and (max-width: 480px) {
+  /* line 63, ../../sass/yt-css/widgets/_steps.scss */
+  .yt-steps .steps li .counter {
+    margin-top: 10px;
+  }
+}
+/* line 72, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li .counter:after, .yt-steps .steps li .counter:before {
+  float: left;
+  position: absolute;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  z-index: 9;
+}
+/* line 78, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li .counter:after {
+  border: 2px solid #e2e2e2;
+  content: attr(title);
+  background: #f8f8f8;
+  width: 38px;
+  height: 38px;
+  top: -20px;
+  margin-left: -18px;
+  line-height: 37px;
+  /* max-width: 480 */
+  text-align: center;
+}
+@media only screen and (max-width: 480px) {
+  /* line 78, ../../sass/yt-css/widgets/_steps.scss */
+  .yt-steps .steps li .counter:after {
+    width: 24px;
+    height: 24px;
+    top: -13px;
+    margin-left: -10px;
+    line-height: 24px;
+  }
+}
+/* line 96, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li .counter:before {
+  border: none;
+  background: white;
+  width: 52px;
+  height: 50px;
+  top: -26px;
+  margin-left: -20px;
+  /* max-width: 480 */
+  z-index: 8;
+  content: '';
+}
+@media only screen and (max-width: 480px) {
+  /* line 96, ../../sass/yt-css/widgets/_steps.scss */
+  .yt-steps .steps li .counter:before {
+    width: 38px;
+    height: 36px;
+    top: -19px;
+    margin-left: -12px;
+  }
+}
+/* line 113, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li .step-label {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: .5em 0 0;
+  line-height: 19px;
+  margin-top:0.7em;
+  /* max-width: 480 */
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 113, ../../sass/yt-css/widgets/_steps.scss */
+  .yt-steps .steps li .step-label {
+    font-size: .7em;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 113, ../../sass/yt-css/widgets/_steps.scss */
+  .yt-steps .steps li .step-label {
+    font-size: .8em;
+  }
+}
+/* line 123, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li .step-label span {
+  position: relative;
+}
+/* line 129, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li.active .counter {
+  background: #2abd2a;
+  color: #2abd2a;
+}
+/* line 132, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li.active .counter:after {
+  border-color: #2abd2a;
+}
+/* line 136, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li.active .step-label {
+  color: #666666;
+}
+/* line 141, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li.complete .counter {
+  background: #2abd2a;
+  color: white;
+}
+/* line 144, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li.complete .counter:after {
+  border-color: #2abd2a;
+  background: #2abd2a;
+}
+/* line 149, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li.complete .step-label {
+  color: #333333;
+  padding-left: 0;
+}
+/* line 155, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li:first-child {
+  width: 28%;
+  text-align: left;
+}
+/* line 159, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li:first-child .counter:after {
+  margin-left: 0;
+}
+/* line 162, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li:first-child .counter:before {
+  margin-left: -3px;
+}
+/* line 166, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li:first-child .step-label {
+  margin-left: -11%;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 166, ../../sass/yt-css/widgets/_steps.scss */
+  .yt-steps .steps li:first-child .step-label {
+    margin-left: -17%;
+  }
+}
+/* line 172, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li:first-child .tapable {
+  left: 0;
+}
+/* line 177, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li:nth-child(2) .tapable {
+  left: 42%;
+}
+/* line 180, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li:nth-child(2) .step-label {
+  margin-left: 7px;
+  /* max-width: 360 */
+}
+@media only screen and (max-width: 360px) {
+  /* line 180, ../../sass/yt-css/widgets/_steps.scss */
+  .yt-steps .steps li:nth-child(2) .step-label {
+    margin-left: -3px;
+  }
+}
+/* line 187, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li.last {
+  width: 28%;
+  text-align: right;
+}
+/* line 191, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li.last .counter:after {
+  margin-left: 0;
+  right: 0;
+}
+/* line 195, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li.last .counter:before {
+  margin-left: -3px;
+  right: 0;
+}
+/* line 200, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li.last .step-label {
+  width: 122%;
+}
+/* line 203, ../../sass/yt-css/widgets/_steps.scss */
+.yt-steps .steps li.last .tapable {
+  right: 0;
+}
+
+/* line 3, ../../sass/yt-css/widgets/_fare-details.scss */
+.fare-details .ui-collapsible-heading a {
+  border-bottom: none;
+  background: white !important;
+}
+/* line 10, ../../sass/yt-css/widgets/_fare-details.scss */
+.fare-details.ui-collapsible-collapsed .ui-collapsible-heading a {
+  border-bottom: 1px solid #e1e1e1;
+  background: #fbfbfb !important;
+}
+/* line 16, ../../sass/yt-css/widgets/_fare-details.scss */
+.fare-details .ui-collapsible-content {
+  background: white !important;
+}
+/* line 19, ../../sass/yt-css/widgets/_fare-details.scss */
+.fare-details .details-summary {
+  padding: 0 0.875em;
+}
+/* line 21, ../../sass/yt-css/widgets/_fare-details.scss */
+.fare-details .details-summary li {
+  border-top: 1px solid #e1e1e1;
+  padding: 0.875em 0;
+  font-size: 1.2em;
+}
+/* line 26, ../../sass/yt-css/widgets/_fare-details.scss */
+.fare-details .details-summary li .fare-brk-title,
+.fare-details .details-summary li .total-fare-txt {
+  text-align: left;
+}
+/* line 30, ../../sass/yt-css/widgets/_fare-details.scss */
+.fare-details .details-summary li .fare-brk-rs,
+.fare-details .details-summary li .total-fare {
+  text-align: right;
+  font-weight: bold;
+}
+/* line 35, ../../sass/yt-css/widgets/_fare-details.scss */
+.fare-details .details-summary li .fare-brk-rs .minus {
+  color: #999999;
+}
+/* line 39, ../../sass/yt-css/widgets/_fare-details.scss */
+.fare-details .details-summary li .rs {
+  color: #f9822e;
+  display: inline-block;
+  margin-top: 0;
+  font-size: 0.875em;
+  font-weight: normal;
+}
+/* line 46, ../../sass/yt-css/widgets/_fare-details.scss */
+.fare-details .details-summary li .total-fare-txt {
+  font-size: 2em;
+}
+/* line 49, ../../sass/yt-css/widgets/_fare-details.scss */
+.fare-details .details-summary li .total-fare {
+  font-size: 2em;
+  padding-bottom: 0.5em;
+}
+/* line 52, ../../sass/yt-css/widgets/_fare-details.scss */
+.fare-details .details-summary li .total-fare .rs {
+  @extent .rs;
+}
+
+/* line 3, ../../sass/yt-css/widgets/_booking-summary.scss */
+.booking-summary .ui-collapsible-heading a {
+  border-bottom: none;
+  background: white !important;
+}
+/* line 11, ../../sass/yt-css/widgets/_booking-summary.scss */
+.booking-summary .ui-collapsible-heading.ui-collapsible-heading-collapsed a {
+  border-bottom: 1px solid #e1e1e1;
+  background: #fbfbfb !important;
+}
+/* line 16, ../../sass/yt-css/widgets/_booking-summary.scss */
+.booking-summary .ui-collapsible-content {
+  background: white !important;
+}
+/* line 19, ../../sass/yt-css/widgets/_booking-summary.scss */
+.booking-summary .details-summary {
+  padding: 0 0.875em;
+}
+/* line 21, ../../sass/yt-css/widgets/_booking-summary.scss */
+.booking-summary .details-summary li {
+  border-top: 1px solid #e1e1e1;
+  padding: 0.975em 0;
+  font-size: 1.2em;
+}
+/* line 26, ../../sass/yt-css/widgets/_booking-summary.scss */
+.booking-summary .details-summary li .fare-brk-title,
+.booking-summary .details-summary li .total-fare-txt {
+  text-align: left;
+}
+/* line 30, ../../sass/yt-css/widgets/_booking-summary.scss */
+.booking-summary .details-summary li .fare-brk-rs,
+.booking-summary .details-summary li .total-fare {
+  text-align: right;
+  font-weight: bold;
+}
+/* line 35, ../../sass/yt-css/widgets/_booking-summary.scss */
+.booking-summary .details-summary li .fare-brk-rs .minus {
+  color: #999999;
+}
+/* line 39, ../../sass/yt-css/widgets/_booking-summary.scss */
+.booking-summary .details-summary li .rs {
+  color: #f9822e;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0.3em;
+  font-size: 0.875em;
+  font-weight: normal;
+}
+/* line 47, ../../sass/yt-css/widgets/_booking-summary.scss */
+.booking-summary .details-summary li .total-fare-txt {
+  font-size: 2em;
+}
+/* line 50, ../../sass/yt-css/widgets/_booking-summary.scss */
+.booking-summary .details-summary li .total-fare {
+  font-size: 2em;
+  padding-bottom: 1em;
+}
+/* line 53, ../../sass/yt-css/widgets/_booking-summary.scss */
+.booking-summary .details-summary li .total-fare .rs {
+  @extent .rs;
+}
+/* line 59, ../../sass/yt-css/widgets/_booking-summary.scss */
+.booking-summary .details-summary .inner-list ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 63, ../../sass/yt-css/widgets/_booking-summary.scss */
+.booking-summary .details-summary .inner-list ul:first-child {
+  padding-bottom: 0.6em;
+}
+/* line 67, ../../sass/yt-css/widgets/_booking-summary.scss */
+.booking-summary .details-summary .inner-list ul li {
+  margin: 0;
+  padding: 0;
+  border: none !important;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1em;
+}
+/* line 74, ../../sass/yt-css/widgets/_booking-summary.scss */
+.booking-summary .details-summary .inner-list ul li:first-child {
+  width: 43%;
+}
+/* line 76, ../../sass/yt-css/widgets/_booking-summary.scss */
+.booking-summary .details-summary .inner-list ul li:first-child .ui-airlines-icon {
+  margin-top: 5px;
+}
+/* line 80, ../../sass/yt-css/widgets/_booking-summary.scss */
+.booking-summary .details-summary .inner-list ul li .flt-name, .booking-summary .details-summary .inner-list ul li .flt-depart, .booking-summary .details-summary .inner-list ul li .flt-arrival {
+  font-size: 0.9em;
+}
+/* line 83, ../../sass/yt-css/widgets/_booking-summary.scss */
+.booking-summary .details-summary .inner-list ul li .flt-code, .booking-summary .details-summary .inner-list ul li .flt-text {
+  font-size: 0.8em;
+  color: #999999;
+}
+/* line 87, ../../sass/yt-css/widgets/_booking-summary.scss */
+.booking-summary .details-summary .inner-list ul li .ui-icon-arrow-lg-r {
+  background-position: -160px -101px !important;
+  height: 16px !important;
+}
+@media only screen and (max-width: 480px) {
+  .booking-summary .details-summary .inner-list ul li .ui-icon-arrow-lg-r {
+	  height: 12px !important;
+	}
+}
+/* line 93, ../../sass/yt-css/widgets/_booking-summary.scss */
+.booking-summary .details-summary .inner-list ul .src-dest {
+  font-family: "Lato Bold";
+}
+/* line 97, ../../sass/yt-css/widgets/_booking-summary.scss */
+.booking-summary .details-summary .inner-list ul .day {
+  color: #999999;
+}
+
+/* line 1, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.yt-pay-main {
+  float: left;
+  width: 100%;
+  margin-top: 1em;
+}
+
+/* line 6, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.amex-form h3 {
+  color: #333;
+  font-size: 1em;
+}
+/* line 10, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.amex-form ul {
+  width: 100%;
+  float: left;
+}
+/* line 13, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.amex-form ul li {
+  min-width: 10%;
+  width: auto !important;
+  min-width: 10%;
+  border-bottom: medium none !important;
+}
+/* line 21, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.amex-form .extra-indo-amex ul {
+  width: 100%;
+  float: left;
+  padding-left:0;
+  margin-top:0;
+  margin-bottom:0.7em;
+}
+/* line 24, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.amex-form .extra-indo-amex ul li {
+  width: 49% !important;
+  float: right;
+  height: auto;
+}
+/* line 27, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.amex-form .extra-indo-amex ul li:first-child {
+  float: left;
+}
+/* line 31, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.amex-form .extra-indo-amex ul li .ui-select .ui-btn {
+  padding: 0.65em 2em 0.65em 0.7em !important;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 31, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .amex-form .extra-indo-amex ul li .ui-select .ui-btn {
+    padding: 0.4em 2em 0.5em 0.7em !important;
+  }
+}
+
+/* line 42, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.you-pay {
+  margin: 0 auto 1.5em;
+  text-align: center;
+  clear: both;
+  width: 100%;
+  float: left;
+}
+/* line 48, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.you-pay .yt-txt {
+  font-size: 1.75em;
+  color: #666666;
+  font-family: "Lato Light";
+}
+/* line 53, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.you-pay .rs-sec {
+  font-size: 1.75em;
+  padding-left: 0.6em;
+  margin-left: 0.2em;
+}
+/* line 57, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.you-pay .rs-sec .rs {
+  color: #f9822e;
+  margin-right: 0em;
+}
+
+/* line 63, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.yt-highlight {
+  margin: 1.5em auto 0.8em;
+  font-family: "Lato Bold";
+  font-size: 1.1em !important;
+  padding: 0.7em 0;
+   min-height: 20px;
+   clear:both;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 63, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .yt-highlight {
+    line-height: 1.5em;
+    padding: 0.7em 2em;
+    font-size: 0.8em;
+  }
+}
+/* line 74, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.yt-highlight .rs {
+  color: #f9822e;
+  margin: 0em;
+}
+
+/* line 79, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.promo-block {
+  margin: 1.22em 0;
+  padding: 1em;
+  clear: both;
+}
+/* line 83, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.promo-block label {
+  font-family: "Lato Bold";
+  font-size: 1.5em;
+}
+/* line 87, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.promo-block .btn-holder {
+  position: relative;
+  font-size: 0.7em;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 87, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .promo-block .btn-holder {
+    font-size: 1em;
+  }
+  /* line 92, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .promo-block .btn-holder .ui-input-text {
+    padding: 0.4em 2em 0.4em 0.7em !important;
+  }
+}
+/* line 96, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.promo-block .btn-holder .ui-input-text {
+  padding: 0.9em 2em 0.8em 0.7em;
+}
+/* line 99, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.promo-block .btn-holder .ui-btn {
+  width: 25%;
+  position: absolute;
+  margin: 0px;
+  top: 0px;
+  right: 0;
+  line-height: 26px !important;
+  /* max-width: 480 */
+  /* max-width: 360 */
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 99, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .promo-block .btn-holder .ui-btn {
+    position: absolute;
+    top: 0em;
+    bottom: 0em;
+    right: 0em;
+    font-size: 16px !important;
+    line-height: 1.25em !important;
+  }
+}
+@media only screen and (max-width: 360px) {
+  /* line 99, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .promo-block .btn-holder .ui-btn {
+    line-height: 0.7em !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 99, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .promo-block .btn-holder .ui-btn {
+    line-height: 1.5em;
+  }
+}
+/* line 120, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.promo-block .btn-holder .ui-btn.ui-focus {
+  background: #49bed9;
+  text-shadow: 1px 1px #39a5c0;
+  position: absolute;
+}
+/* line 125, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.promo-block .btn-holder .ui-btn:hover {
+  position: absolute;
+  margin: 0px;
+}
+/* line 131, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.promo-block .cancel-redemption {
+  font-size: 1.5em !important;
+  display: inline-block;
+  margin: 0.8em 0 0;
+}
+/* line 135, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.promo-block .cancel-redemption span {
+  color: #595959;
+  font-size: 0.6em;
+  font-weight: bold;
+  position: relative;
+  top: -2px;
+}
+/* line 143, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.promo-block .save-txt {
+  color: #009200;
+  font-size: 1.5em;
+  margin-top: 0.7em;
+  padding-top: 0.7em;
+	
+}
+/* line 149, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.promo-block .save-txt .rs {
+  display: inline-block;
+  font-size: 1em;
+  vertical-align: middle;
+}
+/* line 154, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.promo-block .save-txt .price-info {
+  position: relative;
+}
+/* line 158, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.promo-block .promo-apply {
+  font-size: 1em;
+  margin-top: 0.5em;
+}
+/* line 161, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.promo-block .promo-apply span {
+  color: #666666;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0.1em;
+}
+/* line 167, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.promo-block .promo-apply .promo-code {
+  background-color: #e6e6e6;
+  border-radius: 100px;
+  position: relative;
+  padding: 0.2em 1.8em 0.3em 0.8em;
+  color: #000;
+  position: relative;
+  font-family: "Lato Bold";
+  margin: 0 0.3em;
+}
+/* line 176, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.promo-block .promo-apply .promo-code .promo-close {
+  position: absolute;
+  right: 0.3em;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.4em;
+  text-align: center;
+  top: 0.18em;
+  cursor: pointer;
+  line-height: 1.4em;
+  font-size: 0.875em;
+}
+
+/* line 191, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.Quick-book {
+  padding: 1em 1em 0;
+  clear: both;
+}
+/* line 325, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.Quick-book p {
+  margin: 0em;
+  font-family: "Lato Bold";
+  font-size: 1.5em;
+  margin-bottom: 0.3em;
+  float: left;
+  width: 98%;
+  padding-left: 0.4em;
+}
+/* line 333, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.Quick-book p .qb-logo {
+  position: relative;
+  top: 0.1em;
+  margin-left: 0.2em;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 333, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .Quick-book p .qb-logo {
+    background-position: -8px -85px;
+    width: 75px;
+    float: left;
+  }
+}
+/* line 343, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.Quick-book p .quick-text {
+  float: left;
+}
+/* line 347, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.Quick-book ul {
+  list-style-type: none;
+  margin: 0em;
+  padding: 0.5em 0.5em 0;
+}
+/* line 351, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.Quick-book ul li {
+  border-top: 1px solid #e1e1e1;
+  width: 100%;
+  position: relative;
+  float: left;
+  padding: 0.8em 0;
+}
+/* line 357, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.Quick-book ul li .ui-radio {
+  width: 60%;
+  float: left;
+}
+/* line 361, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.Quick-book ul li .ui-radio label {
+  padding: 0 1em 0 3em !important;
+}
+/* line 363, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.Quick-book ul li .ui-radio label .cardInfo {
+  float: left;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 363, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .Quick-book ul li .ui-radio label .cardInfo {
+    font-size: 0.85em;
+    float: left;
+    width: 100%;
+  }
+}
+/* line 370, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.Quick-book ul li .ui-radio label .cardInfo span.cardName {
+  font-size: 1em;
+  display: inline-block;
+  line-height: 2em;
+  vertical-align: top;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 370, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .Quick-book ul li .ui-radio label .cardInfo span.cardName {
+    float: left;
+  }
+  /* line 377, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .Quick-book ul li .ui-radio label .cardInfo span.cardName i {
+    float: left;
+  }
+}
+/* line 381, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.Quick-book ul li .ui-radio label .cardInfo span.cardName span {
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 381, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .Quick-book ul li .ui-radio label .cardInfo span.cardName span {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 60%;
+    float: left;
+  }
+}
+/* line 390, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.Quick-book ul li .ui-radio label .cardInfo span.cardNumber {
+  font-size: 0.75em;
+  display: block;
+  color: #999999;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: "Lato Regular", Arial;
+  width: 98%;
+}
+/* line 398, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.Quick-book ul li .ui-radio label .cardInfo .ui-input-text {
+  padding: 0em !important;
+}
+/* line 403, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.Quick-book ul li .ui-radio .ui-btn-icon-left:after {
+  left: 0.2em !important;
+  top: 1em;
+}
+/* line 408, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.Quick-book ul li .cvvNo {
+  width: 21.8%;
+  float: left;
+  font-size: 0.6em;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 408, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .Quick-book ul li .cvvNo {
+    width: 25%;
+    font-size: 1em;
+  }
+}
+/* line 418, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.Quick-book ul li .cross-icon {
+  position: absolute;
+  top: 2em;
+  right: 0.4em;
+  background-color: #cdcdcd;
+  font-size: 14;
+  width: 1.6em;
+  height: 1.6em;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.4em;
+  cursor: pointer;
+}
+/* line 432, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.Quick-book ul li .master-card {
+  position: relative;
+  margin-right: 0.5em;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 438, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.Quick-book ul li:last-child {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+/* line 442, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-cards {
+  clear: both;
+  padding: 1em;
+}
+/* line 445, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-cards ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0em;
+}
+/* line 449, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-cards ul .section-heading {
+  font-size: 1.5em;
+  font-family: "Lato Bold";
+}
+/* line 454, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-cards ul li {
+  padding: 0.6em 0;
+  float: left;
+  width: 100%;
+}
+/* line 459, ../../sass/yt-css/assets/payment/_payment-models.scss */
+
+/* line 461, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-cards ul li .detail-holder .wfull {
+  margin-bottom: 1em;
+  position: relative;
+}
+/* line 464, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-cards ul li .detail-holder .wfull label {
+  margin-bottom: 0.5em;
+  font-size: 1.25em;
+}
+/* line 468, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-cards ul li .detail-holder .wfull i {
+  position: absolute;
+  right: 1em;
+  top: 3.9em;
+}
+@media only screen and (max-width: 480px) {
+	.other-cards ul li .detail-holder .wfull i {
+	  top: 2.9em;
+	}
+}
+/* line 473, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-cards ul li .detail-holder .wfull .expiry-date {
+  width: 65%;
+  float: left;
+}
+/* line 476, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-cards ul li .detail-holder .wfull .expiry-date .drop-menu {
+  width: 46%;
+  float: left;
+  margin-left: 1em;
+}
+/* line 480, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-cards ul li .detail-holder .wfull .expiry-date .drop-menu .ui-btn {
+  padding: 0.7em 2em 0.7em 1.5em;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 480, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .other-cards ul li .detail-holder .wfull .expiry-date .drop-menu .ui-btn {
+    padding: 0.5em 2em 0.5em 0.7em !important;
+  }
+}
+/* line 489, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-cards ul li .detail-holder .wfull .card-cvv {
+  width: 28.5%;
+  float: right;
+}
+/* line 496, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-cards ul li .ui-radio .ui-btn-icon-left:after {
+  left: 0.2em !important;
+}
+/* line 500, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-cards ul li label .label-align {
+  margin-left: 1em;
+  display: inline-block;
+  line-height: 0em;
+  vertical-align: middle;
+}
+/* line 508, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-cards ul li.showcardInfo .detail-holder {
+  display: block;
+}
+
+/* line 514, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.qb-register {
+  width: 100%;
+  float: left;
+  margin-top: 0.2em;
+}
+/* line 518, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.qb-register .qb-text-cont {
+  float: left;
+  margin-left: 0.9em;
+}
+/* line 521, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.qb-register .qb-text-cont .qb-logo {
+  display: block;
+  width: 100%;
+  float: left;
+}
+/* line 526, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.qb-register .qb-text-cont .qb-text {
+  display: block;
+  width: 100%;
+  float: left;
+  font-size: 16px;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 526, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .qb-register .qb-text-cont .qb-text {
+    font-size: 0.75em;
+  }
+}
+
+/* line 537, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-payment {
+  float: left;
+  width: 100%;
+}
+/* line 540, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-payment ul {
+  width: 100%;
+  float: left;
+  margin-top: 1.5em;
+}
+/* line 544, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-payment ul li {
+  width: 50%;
+  float: left;
+  border: none;
+  padding: 0em;
+  height:65px;
+  /* max-width: 360 */
+}
+@media only screen and (max-width: 360px) {
+  /* line 544, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .other-payment ul li {
+    width: 100%;
+    height:50px;
+  }
+}
+/* line 553, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-payment ul li label {
+  padding: 0.5em 0 0.5em 3em !important;
+}
+/* line 558, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-payment .wfull {
+  margin-top: 1em;
+}
+/* line 561, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-payment .other-holder {
+  float: left;
+  width: 100%;
+}
+/* line 564, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-payment .other-holder .content {
+  padding: 1em;
+}
+/* line 568, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-payment .other-holder .content.cash-card .yt-highlight {
+  margin: 0.5em auto 0.8em;
+}
+/* line 571, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-payment .other-holder .content.cash-card .cash-txt {
+  color: #333;
+  font-size: 1em;
+  margin: 0px;
+}
+/* line 578, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-payment .other-holder .content.emi-optn .yt-highlight {
+  margin: 0.5em auto 0.8em;
+}
+/* line 581, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-payment .other-holder .content.emi-optn .detail-emi {
+  color: #333;
+  font-size: 1em;
+  margin: 0px;
+}
+/* line 585, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-payment .other-holder .content.emi-optn .detail-emi ul {
+  margin-top: 0px;
+}
+/* line 587, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-payment .other-holder .content.emi-optn .detail-emi ul li {
+  width: 100% !important;
+  padding: 1em 0;
+  border-bottom: 1px solid #cbcbcb;
+}
+/* line 591, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-payment .other-holder .content.emi-optn .detail-emi ul li span.emi-title {
+  color: #666;
+}
+/* line 594, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-payment .other-holder .content.emi-optn .detail-emi ul li span.emi-txt {
+  color: #333;
+}
+/* line 603, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-payment .other-holder .content.amex-eze .eze-txt span {
+  display: block;
+}
+/* line 609, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-payment .other-holder .content.airtel-money .yt-highlight {
+  margin-bottom: 0em !important;
+}
+/* line 612, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-payment .other-holder .content.airtel-money .wfull {
+  margin: 0px;
+}
+/* line 614, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-payment .other-holder .content.airtel-money .wfull label {
+  margin-bottom: 0em !important;
+}
+/* line 619, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-payment .other-holder .content.airtel-money .wallet-txt span {
+  display: block;
+}
+/* line 625, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-payment .other-holder .content.atm-card .atm-optn-cont {
+  float: left;
+  width: 100%;
+}
+/* line 628, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-payment .other-holder .content.atm-card .atm-optn-cont ul {
+  width: 100%;
+  float: left;
+  margin-top: 1.5em;
+}
+/* line 632, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-payment .other-holder .content.atm-card .atm-optn-cont ul li {
+  height: 65px;
+  width: 50%;
+  float: left;
+  border: none;
+  padding: 0em;
+  /* max-width: 360 */
+}
+@media only screen and (max-width: 360px) {
+  /* line 632, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .other-payment .other-holder .content.atm-card .atm-optn-cont ul li {
+    width: 100%;
+  }
+}
+/* line 641, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-payment .other-holder .content.atm-card .atm-optn-cont ul li label {
+  padding: 0.5em 0 0.5em 3em !important;
+}
+/* line 646, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-payment .other-holder .content.atm-card .atm-optn-cont .wfull {
+  margin-top: 1em;
+}
+/* line 652, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-payment .other-holder .content.rewards-citi .reards-cont {
+  width: 49%;
+  float: right;
+}
+/* line 655, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-payment .other-holder .content.rewards-citi .reards-cont:first-child {
+  margin-left: 0px;
+  float: left;
+}
+/* line 659, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.other-payment .other-holder .content.rewards-citi .reards-cont label {
+  font-size: 1.25em;
+  color: #666;
+}
+
+/* line 667, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.net-banking-cont {
+  float: left;
+  width: 100%;
+}
+/* line 670, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.net-banking-cont ul {
+  width: 100%;
+  float: left;
+  margin-top: 1.5em;
+}
+/* line 674, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.net-banking-cont ul li {
+  width: 50%;
+  float: left;
+  border: none;
+  padding: 0em;
+  /* max-width: 360 */
+}
+@media only screen and (max-width: 360px) {
+  /* line 674, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .net-banking-cont ul li {
+    width: 100%;
+  }
+}
+/* line 682, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.net-banking-cont ul li label {
+  padding: 0.5em 0 0.5em 3em !important;
+}
+/* line 687, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.net-banking-cont .wfull {
+  margin-top: 1em;
+}
+
+/* line 691, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.call-btn {
+  width: 93%;
+  float: left;
+  padding: 1em;
+}
+/* line 695, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.call-btn a {
+  background-color: #eeeeee;
+  color: #333333;
+  padding: 1.5em 1em;
+  width: 94%;
+  float: left;
+  font-weight: normal;
+  position: relative;
+  text-align: center;
+}
+/* line 704, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.call-btn a span {
+  font-weight: bold;
+}
+/* line 707, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.call-btn a:hover {
+  color: #333333;
+}
+/* line 710, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.call-btn a .call-icon {
+  position: absolute;
+  left: 4em;
+  top: 0.5em;
+  /* max-width: 480 */
+  /* max-width: 360 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 710, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .call-btn a .call-icon {
+    left: 0.2em;
+  }
+}
+@media only screen and (max-width: 360px) {
+  /* line 710, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .call-btn a .call-icon {
+    left: 1.2em;
+  }
+}
+
+/* line 723, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.yt-tnc {
+  clear: both;
+  padding: 0 1em;
+  text-align: center;
+  margin-top: 2.5em;
+  float: left;
+  width: 95%;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 723, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .yt-tnc {
+    width: 93%;
+  }
+  /* line 732, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .yt-tnc a {
+    display: block;
+  }
+}
+/* line 736, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.yt-tnc a {
+  text-decoration: none;
+  font-weight: normal;
+}
+
+/* line 741, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.pay-now-btn {
+  clear: both;
+  padding: 0 1em;
+}
+
+/* line 745, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.call-n-chat {
+  clear: both;
+  padding: 1em;
+}
+/* line 748, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.call-n-chat label {
+  font-size: 1.25em;
+}
+/* line 751, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.call-n-chat a {
+  width: 48%;
+  float: left;
+  border: 1px solid #d7d7d7;
+  color: #333333;
+  font-size: 1.1em;
+  position: relative;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 751, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .call-n-chat a {
+    font-size: 0.875em;
+  }
+}
+/* line 762, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.call-n-chat a .call-icon-block {
+  width: 20%;
+  background-color: #d7d7d7;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 762, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .call-n-chat a .call-icon-block {
+    width: 28%;
+  }
+}
+/* line 640, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.call-n-chat a .call-icon-block .call-icon-yt {
+  width: 34px;
+  height: 41px;
+  margin-top: 0.7em;
+  margin-left: 0.5em;
+  /* max-width: 360 */
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 360px) {
+  /* line 640, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .call-n-chat a .call-icon-block .call-icon-yt {
+    background-position: -3px -128px !important;
+    margin-top: 0.2em !important;
+    margin-left: 0em;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 640, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .call-n-chat a .call-icon-block .call-icon-yt {
+    background-position: 4px -130px;
+    margin-top: 0.7em;
+    height: 51px;
+    width: 42px;
+    margin-left: 0em;
+  }
+}
+/* line 661, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.call-n-chat a .chat-icon-yt {
+  width: 48px;
+  height: 48px;
+  margin-top: 0.4em;
+}
+/* line 666, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.call-n-chat a .call-num {
+  width: 84%;
+  float: right;
+  line-height: 4em;
+  text-align: center;
+  background-color: #ebebeb;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 666, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .call-n-chat a .call-num {
+    line-height: 2.1em;
+  }
+}
+/* line 675, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.call-n-chat a .call-num span {
+  font-family: "Lato Light";
+  color: #666666;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 675, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .call-n-chat a .call-num span {
+    display: block;
+  }
+}
+/* line 683, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.call-n-chat a .chat-us {
+  width: 84%;
+  float: right;
+  line-height: 4em;
+  text-align: center;
+  background-color: #ebebeb;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 683, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .call-n-chat a .chat-us {
+    line-height: 4.2em;
+  }
+}
+/* line 692, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.call-n-chat a .chat-us span {
+  font-family: "Lato Light";
+  color: #666666;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 692, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .call-n-chat a .chat-us span {
+    display: block;
+  }
+}
+
+/* line 702, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.ml2em {
+  float: right !important;
+}
+
+/* line 705, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.mt2em {
+  margin-top: 2em;
+}
+
+/* line 706, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.ml0 {
+  margin-left: 0em !important;
+}
+
+/* line 707, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.rs {
+  font-style: normal;
+}
+
+/***sprite icons**/
+/* line 709, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.arrow-check {
+  background-position: -24px -10px;
+  width: 16px;
+  height: 13px;
+  margin-right: 0.3em;
+}
+
+/* line 715, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.back-ico {
+  background-position: 0px 0px;
+  width: 22px;
+  height: 32px;
+}
+
+/* line 720, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.payment-icon {
+  background-image: url(../images/payment-common.png);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  display: inline-block;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 720, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .payment-icon {
+    background-image: url(../images/payment-common-480.png);
+  }
+}
+
+/* line 729, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.yt-pay-logo {
+  background-position: -90px -127px;
+  width: 50px;
+  height: 55px;
+  position: absolute;
+  top: 30%;
+  left: 1em;
+  /* max-width: 360 */
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 360px) {
+  /* line 729, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .yt-pay-logo {
+    background-position: -90px -102px;
+    height: 42px;
+    top: 10% !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 729, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .yt-pay-logo {
+    background-position: -90px -102px;
+    top: 27%;
+  }
+}
+
+/* line 746, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.visa-quick {
+  background-position: 0px -61px;
+  width: 70px;
+  height: 28px;
+  margin-right: 0.5em;
+  position: relative;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 746, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .visa-quick {
+    background-position: -8px -61px;
+    height: 20px;
+    width: 36px;
+  }
+}
+
+/* line 758, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.visa_cc {
+  background-position: 0px -61px;
+  width: 70px;
+  height: 28px;
+  margin-right: 0.5em;
+  position: relative;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 758, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .visa_cc {
+    background-position: -8px -61px;
+    height: 20px;
+    width: 36px;
+  }
+}
+
+/* line 770, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.diners_club_international_cc {
+  background-position: -79px -304px;
+  width: 70px;
+  height: 43px;
+  margin-right: 0.5em;
+  position: relative;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 770, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .diners_club_international_cc {
+    background-position: -47px -254px;
+    height: 23px;
+    width: 36px;
+  }
+}
+
+/* line 782, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.amex_cc {
+  background-position: 3px -304px;
+  width: 70px;
+  height: 43px;
+  margin-right: 0.5em;
+  position: relative;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 782, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .amex_cc {
+    background-position: -0px -259px;
+    height: 23px;
+    width: 36px;
+  }
+}
+
+/* line 794, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.maestro_cc {
+  background-position: 2px -360px;
+  width: 65px;
+  height: 37px;
+  margin-right: 0.5em;
+  position: relative;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 794, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .maestro_cc {
+    background-position: -95px -253px;
+    height: 23px;
+    width: 36px;
+  }
+}
+
+/* line 806, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.amex-card-b {
+  background-position: 0px -200px;
+  width: 177px;
+  height: 47px;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 806, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .amex-card-b {
+    background-position: -6px -182px;
+    height: 32px;
+  }
+}
+
+/* line 815, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.airtel-icon {
+  background-position: -9px -248px;
+  width: 113px;
+  height: 52px;
+  /* max-width: 360 */
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 360px) {
+  /* line 815, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .airtel-icon {
+    background-position: -4px -219px;
+    height: 32px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 815, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .airtel-icon {
+    background-position: -4px -214px;
+    height: 36px;
+  }
+}
+
+/* line 828, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.qb-logo {
+  background-position: -2px -94px;
+  width: 110px;
+  height: 22px;
+}
+@media only screen and (max-width: 480px) {
+	.qb-logo {
+	  background-position: -2px -92px;
+	  width: 70px;
+	  height: 18px;
+	}
+}
+/* line 833, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.call-icon-yt {
+  background-position: 1px -144px;
+}
+
+/* line 836, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.chat-icon-yt {
+  background-position: -39px -138px;
+  /* max-width: 360 */
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 360px) {
+  /* line 836, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .chat-icon-yt {
+    background-position: -51px -132px !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 836, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .chat-icon-yt {
+    background-position: -42px -124px;
+  }
+}
+
+/* line 845, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.master-card, .mastercard_cc {
+  background-position: -75px -55px;
+  width: 60px;
+  height: 36px;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 845, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .master-card, .mastercard_cc {
+    background-position: -73px -61px;
+    height: 27px;
+    width: 30px;
+  }
+}
+
+/* line 855, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.qb-logo-small {
+  background-position: -2px -120px;
+  width: 85px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: 0.2em;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 855, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .qb-logo-small {
+    background-position: -9px -92px;
+  }
+}
+
+/* line 867, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.call-icon {
+  background-position: -96px -3px;
+  width: 35px;
+  height: 45px;
+}
+
+/* line 872, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.net-banking {
+  background-image: url(../images/net-banking.png);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 30px;
+}
+
+/* atm options start*/
+/* line 880, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.atm-optns {
+  background-image: url(../images/atm-cards.png);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 30px;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 880, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .atm-optns {
+    background-image: url(../images/atm-cards-420.png);
+  }
+}
+
+/* line 890, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.atm-optn-cont .canara-net {
+  background-position: 0px -9px;
+  width: 147px;
+  height: 42px;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 890, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .atm-optn-cont .canara-net {
+    background-position: 0px 3px;
+  }
+}
+
+/* line 898, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.atm-optn-cont .citi-net {
+  background-position: 0px -70px;
+  width: 106px;
+  height: 32px;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 898, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .atm-optn-cont .citi-net {
+    background-position: 0 -35px;
+  }
+}
+
+/* line 1036, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.atm-optn-cont .iob-net {
+  background-position: 0 -116px;
+  height: 40px;
+  width: 130px;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 1036, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .atm-optn-cont .iob-net {
+    background-position: 0 -66px;
+  }
+}
+
+/* line 906, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.atm-optn-cont .indianover-net {
+  background-position: 0 -116px;
+  height: 40px;
+  width: 130px;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 906, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .atm-optn-cont .indianover-net {
+    background-position: 0 -66px;
+  }
+}
+
+/* line 914, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.atm-optn-cont .pnb-net {
+  background-position: 0 -176px;
+  height: 42px;
+  width: 190px;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 914, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .atm-optn-cont .pnb-net {
+    background-position: 0 -103px;
+  }
+}
+
+/* line 922, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.atm-optn-cont .sbi-net {
+  background-position: 0 -236px;
+  height: 40px;
+  width: 212px;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 922, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .atm-optn-cont .sbi-net {
+    background-position: 0 -141px;
+  }
+}
+
+/* line 930, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.atm-optn-cont .union-net {
+  background-position: 0 -296px;
+  width: 180px;
+  height: 46px;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 930, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .atm-optn-cont .union-net {
+    background-position: 0 -180px;
+  }
+}
+
+/* atm options end*/
+/* line 939, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.hdfc-net {
+  background-position: 0px 0px;
+  width: 96px;
+  height: 16px;
+}
+
+/* line 944, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.icici-net {
+  background-position: 0 -15px;
+  width: 96px;
+}
+
+/* line 948, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.citi-net {
+  background-position: 0 -43px;
+  width: 84px;
+}
+
+/* line 952, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.sbi-net {
+  background-position: 0 -72px;
+  width: 92px;
+}
+
+/* line 956, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.axis-net {
+  background-position: 0 -102px;
+  width: 88px;
+}
+
+/* line 960, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.kotak-net {
+  background-position: 0 -140px;
+  width: 84px;
+}
+
+/* line 964, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.IDBI-net {
+  background-position: 0 -172px;
+  width: 90px;
+}
+
+/* line 968, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.stand-char-icon {
+  background-position: 0 -210px;
+  width: 84px;
+}
+
+/*** Start Tabs-version-two ***/
+/* line 975, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.ui-tabs.tabs-version-two {
+  padding: 0;
+  width: 81%;
+  margin: 0 auto;
+}
+
+/* line 985, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.tabs-version-two .ui-navbar ul li a,
+.tabs-version-two .ui-navbar ul li a:hover {
+  border-bottom: 1px solid #666666;
+  border-left: 1px solid #666666;
+  border-right: 1px solid #666666;
+  background-color: #e6e6e6 !important;
+  border-top: 1px solid #666666 !important;
+  font: normal 1.5em "Lato Regular", Arial !important;
+  color: #666666 !important;
+  padding: 0.5em 0;
+  /* max-width: 480 */
+  /* max-width: 360 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 985, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .tabs-version-two .ui-navbar ul li a,
+  .tabs-version-two .ui-navbar ul li a:hover {
+    font-size: 1.250em !important;
+    padding: 0.6em 0;
+  }
+}
+@media only screen and (max-width: 360px) {
+  /* line 985, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .tabs-version-two .ui-navbar ul li a,
+  .tabs-version-two .ui-navbar ul li a:hover {
+    font-size: 1.1em !important;
+    padding: 1em 0;
+  }
+}
+/* line 1004, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.tabs-version-two .ui-navbar ul li.ui-tabs-active a {
+  background: #666666 !important;
+  border-color: #c4c4c4 !important;
+  border-top: 1px solid #666666 !important;
+  border-bottom: 1px solid #666666 !important;
+  border-left: 1px solid #666666 !important;
+  border-right: none !important;
+  color: white !important;
+  position: relative;
+  overflow: visible !important;
+  text-shadow: none;
+}
+/* line 1016, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.tabs-version-two .ui-navbar ul li.ui-tabs-active a:after {
+  content: " ";
+  border: 10px solid transparent;
+  border-top-color: #666666;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: -20px;
+  left: 48%;
+}
+/* line 1034, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.tabs-version-two .ui-content {
+  padding: 0;
+}
+/* line 1037, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.tabs-version-two .pp-content {
+  clear: both;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1.3em;
+}
+/* line 1042, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.tabs-version-two .pp-content li {
+  float: left;
+  width: 33%;
+  border-right: 1px solid #c4c4c4;
+}
+/* line 1046, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.tabs-version-two .pp-content li:last-child {
+  border-right: none !important;
+  text-align: right;
+}
+/* line 1050, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.tabs-version-two .pp-content li:nth-child(2) {
+  text-align: center;
+}
+/* line 1053, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.tabs-version-two .pp-content li .pp-head {
+  color: #666666;
+  font-size: 1.2em;
+}
+/* line 1057, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.tabs-version-two .pp-content li .pp-cont {
+  font-size: 1.8em;
+}
+
+
+@media only screen and (max-width: 480px) {
+  /* line 244, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .redeem-block .success-block .cancel-redem {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 360px) {
+  /* line 244, ../../sass/yt-css/assets/payment/_payment-models.scss */
+  .redeem-block .success-block .cancel-redem {
+    font-size: 1.2em;
+    width: 50%;
+  }
+}
+/* line 260, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.redeem-block .success-block .bal-amnt {
+  font-size: 1.5em;
+  color: #333;
+}
+/* line 263, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.redeem-block .success-block .bal-amnt .bal-txt {
+  display: block;
+  margin-bottom: 0.2em;
+  font-size: 0.9em !important;
+}
+/* line 267, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.redeem-block .success-block .bal-amnt .bal-cal {
+  color: #666;
+}
+/* line 270, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.redeem-block .success-block .bal-amnt .total-bal {
+  font-size: 1.5em;
+  color: #333;
+}
+/* line 273, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.redeem-block .success-block .bal-amnt .total-bal .rs {
+  color: #f9822e !important;
+}
+/* line 279, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.redeem-block .ui-btn.ui-slider-handle {
+  border-radius: 50%;
+}
+/* line 281, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.redeem-block .ui-btn.ui-slider-handle:after {
+  background: none repeat scroll 0 0 #0493b4;
+  border-radius: 50%;
+  content: " ";
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  margin-top: 8px;
+}
+/* line 290, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.redeem-block .ui-slider-popup {
+  border: 1px solid #e2e2e2;
+  border-radius: 0 !important;
+  font-family: "Lato Bold";
+  font-size: 1.125em;
+  height: 2.138em;
+  min-width: 64px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  position: relative;
+  width: auto;
+}
+/* line 301, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.redeem-block .ui-slider-popup:after {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: white transparent transparent;
+  border-image: none;
+  border-right: 10px solid transparent;
+  border-style: solid;
+  border-width: 10px;
+  bottom: -20px;
+  content: " ";
+  display: inline-block;
+  height: 0;
+  left: 36%;
+  position: absolute;
+  width: 0;
+}
+
+/* line 1059, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.tabs-version-two .pp-content li .pp-cont .rs {
+  vertical-align: middle;
+  color: #f9822e;
+}
+/* line 1068, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.tabs-version-two .you-pay {
+  margin-top: 2.4em;
+}
+
+/*** eof Tabs-version-two ***/
+
+
+.Quick-book ul li .maestro_cc {
+  position: relative;
+  margin-right: 0.5em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 782, ../../sass/yt-css/assets/payment/_payment-models.scss */
+.qb_amex_cc {
+  background-position: 2px -301px;;
+  width: 70px;
+  height: 43px;
+  margin-right: 0.5em;
+  position: relative;
+  /* max-width: 480 */
+}
+
+@media only screen and (max-width: 480px) {
+  .qb_amex_cc {
+   background-position: -1px -257px;
+   height: 20px;
+   width: 31px;
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  .eCash-logo {
+    background-position: 0 -289px !important;
+    width: 52px;
+    height: 22px;
+  }
+}
+.eCash-logo {
+  background-position: -79px -358px;
+  height: 32px;
+  left: 0.5em;
+  position: absolute;
+  width: 82px;
+  /* max-width: 480 */
+}
+.redeem-block label {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  padding-left: 4em;
+  font-family: lato bold;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  .redeem-block label {
+    font-size: 1.5em !important;
+  }
+}
+
+.pmt_errMsgBlock {
+    background: url("../images/error-red-ico.png") no-repeat scroll 4px 5px #fef2f4;
+    border: 1px solid #d2b5ba;
+    color: #fd0402;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 13px;
+    margin-top: 15px;
+    padding: 8px 10px 8px 33px;
+    width: 92.5%;
+}
+.pmt_warningMsgBlock{
+	background:url("../images/warning-icon.gif") no-repeat scroll 4px 5px;
+	padding:5px 10px 5px 33px;
+	background-color:#FEF2F4;
+	border:1px solid #D2B5BA;
+	margin-top:15px;
+	margin-bottom:13px;
+	color:#0101DF;
+	font-size:12px;
+	font-weight:bold;
+    float: left;
+ 	padding: 8px 10px 8px 33px;
+    width: 92.5%;
+}
+@media only screen and (max-width: 480px) {
+  .pmt_errMsgBlock, .pmt_warningMsgBlock {
+      width: 86%;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .pmt_errMsgBlock, .pmt_warningMsgBlock {
+      width: 84.5%;
+  }
+}
+
+
+/* line 1, ../../sass/yt-css/widgets/_internationa-div.scss */
+.international-cards {
+  width: 100%;
+  float: left;
+}
+/* line 4, ../../sass/yt-css/widgets/_internationa-div.scss */
+.international-cards h3 {
+  color: #333;
+  font-size: 1em;
+}
+/* line 8, ../../sass/yt-css/widgets/_internationa-div.scss */
+.international-cards ul {
+  width: 100%;
+  float: left;
+}
+/* line 11, ../../sass/yt-css/widgets/_internationa-div.scss */
+.international-cards ul li {
+  min-width: 10%;
+  width: 50% !important;
+  min-width: 10%;
+  border-bottom: medium none !important;
+}
+/* line 16, ../../sass/yt-css/widgets/_internationa-div.scss */
+.international-cards ul li .ui-radio {
+  float: left;
+  width: 100%;
+}
+/* line 19, ../../sass/yt-css/widgets/_internationa-div.scss */
+.international-cards ul li .ui-radio label {
+  height: 2em !important;
+  width: 100%;
+}
+/* line 22, ../../sass/yt-css/widgets/_internationa-div.scss */
+.international-cards ul li .ui-radio label .country-in {
+  float: left;
+  margin-top: 0.4em;
+}
+/* line 26, ../../sass/yt-css/widgets/_internationa-div.scss */
+.international-cards ul li .ui-radio label .ui-btn.ui-radio-off:after {
+  margin-top: -20px !important;
+}
+/* line 34, ../../sass/yt-css/widgets/_internationa-div.scss */
+.international-cards .extra-indo-amex ul {
+  width: 100%;
+  float: left;
+  padding: 0px;
+}
+/* line 38, ../../sass/yt-css/widgets/_internationa-div.scss */
+.international-cards .extra-indo-amex ul li {
+  width: 49% !important;
+  float: right;
+  border: none !important;
+}
+/* line 42, ../../sass/yt-css/widgets/_internationa-div.scss */
+.international-cards .extra-indo-amex ul li:first-child {
+  float: left;
+}
+/* line 47, ../../sass/yt-css/widgets/_internationa-div.scss */
+.international-cards .extra-indo-amex ul li .ui-select .ui-btn {
+  padding: 0.65em 2em 0.65em 0.7em !important;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 47, ../../sass/yt-css/widgets/_internationa-div.scss */
+  .international-cards .extra-indo-amex ul li .ui-select .ui-btn {
+    padding: 0.4em 2em 0.5em 0.7em !important;
+  }
+}
+/* line 58, ../../sass/yt-css/widgets/_internationa-div.scss */
+.international-cards .wfull.card-number .ui-input-text {
+  position: relative !important;
+}
+/* line 61, ../../sass/yt-css/widgets/_internationa-div.scss */
+.international-cards .wfull.card-number .visa-quick {
+  position: absolute !important;
+  right: 1em;
+  top: 32%;
+  /* max-width: 480 */
+}
+@media only screen and (max-width: 480px) {
+  /* line 61, ../../sass/yt-css/widgets/_internationa-div.scss */
+  .international-cards .wfull.card-number .visa-quick {
+    top: 36%;
+  }
+}
+#redeem-slider .ui-slider-track{
+	margin:0 15px 0 8px !important;
+	height:5px !important;
+}
+
+
+/* start promo code new ui */
+.promo-input {
+width: 70%;
+}
+.promo-input div.ui-input-search:after, .promo-holder .ui-input-btn:after {
+display: none !important;
+}
+.promo-input .ui-input-clear {
+right: 20px !important;
+margin: -14px 0 0 !important;
+}
+.promo-btn {
+width: 30%;
+}
+.promo-holder.pass .ui-input-search {
+border-color: #2abd2a !important;
+}
+.promo-holder.pass .ui-btn-blue {
+background: #2abd2a !important;
+}
+.promo-holder.fail .ui-input-search {
+border-color: #bd2a2a !important;
+}
+.promo-holder.fail .ui-btn-blue {
+background: #bd2a2a !important;
+}
+.promo-holder.pass .ui-input-clear, .promo-holder.fail .ui-input-clear {
+display: inline-block !important;
+}
+/* eof promo code new ui */
+.yt-ui-content .Quick-book .login-cont{
+	padding: 1em 0 0.3em;
+}
+.qb-register label{
+	padding: 0 1em 0 2.5em!important;
+}
+.pmt_defErrorlist{
+	color:#f00;
+	padding-bottom: 5px;
+}
+.logo-pos-changed{
+	top:5.4em!important;
+}
+@media only screen and (max-width: 480px) {
+  .logo-pos-changed{
+		top:4.4em!important;
+	}
+}
+.extra-indo-amex ul li label{
+	padding: 0.2em 0 0.5em 0em !important;
+}
+
+.other-payment ul.payment-mode {
+  width: 99.85%;
+  float: none;
+  margin-top: 0;
+}
+@media only screen and (max-width: 800px) {
+.other-payment ul.payment-mode{
+width: 99.7%;
+}
+}
+@media only screen and (max-width: 480px) {
+.other-payment ul.payment-mode{
+width: 99.5%;
+}
+}
+@media only screen and (max-width: 360px) {
+.other-payment ul.payment-mode{
+width: 99.4%;
+}
+}
+.other-payment ul.payment-mode li {
+  width: 100%;
+  float: none;
+  border: none;
+  padding: 0em;
+  height:auto;
+  /* max-width: 360 */
+}
+
+.payment-mode .cash-txt{
+	margin-top: 0.2em;
+	margin-bottom:0;
+}
+.payment-mode{
+	border: 1px solid #cdd1d1;
+	border-top: 0;
+}
+ .other-cards ul.payment-mode li label .label-align{
+  margin-left: 0;
+  font-family: "lato regular";
+   margin-bottom: 8px;
+}
+
+
+/* emi new*/
+.emi-dets ul {
+	margin-top:0!important;
+}
+.emi-dets ul li{
+	width:100%;
+	padding-bottom: 1.2em;
+	border-bottom: 1px solid #e1e1e1!important;
+}
+@media only screen and (max-width: 480px) {
+	.emi-dets ul li{
+		padding-bottom: 3.2em;
+	}
+}
+.emi-tenure tr:last-child{
+	font-size: 0.8em;
+}
+.emi-intrest td{
+	background: #f5f5f5;
+	padding:5px;
+}
+.emi-intrest td:first-child{
+	text-align: left;
+}
+.emi-intrest td:nth-child(2){
+	text-align: center;
+}
+.emi-intrest td:last-child{
+	text-align: right;
+}
+.emi-head{
+	background: #DEDEDE;
+	float:left;
+	font-size: 1em;
+	padding: 10px 5px 10px 3.2em;
+	width:89%;
+	
+}
+@media only screen and (max-width: 480px) {
+	.emi-head{
+		width:84%;
+		font-size: 1.2em;
+		padding: 5px 5px 5px 3.2em;
+	}
+}
+.tabel-header-footer{
+	padding-top:1em!important;
+}
+.more-link{
+	margin-top: 5px;
+	line-height: 2em;
+}
+.addtMsg {
+	padding-bottom:0.5em;
+}
+.emi-plans .wfull .field-label{
+	color: #333;
+}
+.total-amt .rs{
+	margin-right:0;
+}
+.more-link:after{
+	background-image: url("../images/icons-32.png");
+    background-position: -303px -470px;
+	content: '';
+    display: inline-block;
+	width: 18px;
+    height: 16px;
+    left: 4px;
+    position: relative;
+    top: 3px;
+}
+@media only screen and (max-width: 480px) {
+	.more-link:after{
+		background-image: url(../images/icons-24.png);
+		background-position: -308px -470px;
+		top:0px !important;
+		width: 10px;
+		height: 9px;
+	}
+}

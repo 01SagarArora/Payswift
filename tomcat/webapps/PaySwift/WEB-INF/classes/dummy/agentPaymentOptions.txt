@@ -1,0 +1,55 @@
+{
+  "hSchargeEnable": "1",
+  "sChargeApplicable": "CC,DC,NB",
+  "applicableFor": {
+    "CC": "All",
+    "CP": "Official",
+    "DC": "All"
+  },
+  "autoBookPriority":{
+  	"CP" : "1",
+  	"CORPCARD" : "2"
+  },
+  "resCode": "200",
+  "payOpt": "CP,CC,DC",
+  "fSchargeEnable": "1",
+  "surcharge": {
+    "CC": {
+      "AMEX": {
+        "type": "P",
+        "surcharge": "2"
+      },
+      "VISA": {
+        "type": "P",
+        "surcharge": "2"
+      },
+      "MASTER": {
+        "type": "P",
+        "surcharge": "2"
+      },
+      "DINERS": {
+        "type": "P",
+        "surcharge": "2"
+      }
+    },
+    "DC": {
+      "AMEX": {
+        "type": "P",
+        "surcharge": "2"
+      },
+      "VISA": {
+        "type": "P",
+        "surcharge": "2"
+      },
+      "MASTER": {
+        "type": "P",
+        "surcharge": "2"
+      },
+      "DINERS": {
+        "type": "P",
+        "surcharge": "2"
+      }
+    }
+  },
+  "resMessage": "success"
+}

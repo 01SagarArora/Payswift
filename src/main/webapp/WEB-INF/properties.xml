@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+						http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+						http://www.springframework.org/schema/context 
+						http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+
+	<bean name="simplePropertyManager" class="com.yatra.platform.commons.property.mgr.ChainedAppPropertyManager">
+		<constructor-arg index="0" >
+			<list>
+			   <ref bean="paymentPropertyManager" />
+			   <ref bean="rawardCashPropertyManager" />
+			   <ref bean="databasePropertyManager" />
+			   <ref bean="errorMessagePropertyManager" />
+			   <ref bean="commonPropertyManager" />
+			</list>
+		</constructor-arg>
+	</bean>
+
+	<bean name="databasePropertyManager" class="com.yatra.platform.commons.property.mgr.ReloadableApplicationPropertyManager">
+		<constructor-arg index="0" value="properties/${environment}/db.properties"/>
+	</bean>
+	
+	<bean name="paymentPropertyManager" class="com.yatra.platform.commons.property.mgr.ReloadableApplicationPropertyManager">
+		<constructor-arg index="0" value="properties/${environment}/paymentui.properties"/>
+	</bean>
+	<bean name="commonPropertyManager" class="com.yatra.platform.commons.property.mgr.ReloadableApplicationPropertyManager">
+		<constructor-arg index="0" value="common.properties"/>
+	</bean>
+	
+	<bean name="rawardCashPropertyManager" class="com.yatra.platform.commons.property.mgr.ReloadableApplicationPropertyManager">
+		<constructor-arg index="0" value="properties/${environment}/rewardCardsBin.properties"/>
+	</bean>
+	
+	<bean name="errorMessagePropertyManager" class="com.yatra.platform.commons.property.mgr.ReloadableApplicationPropertyManager">
+		<constructor-arg index="0" value="properties/${environment}/errorMessages.properties"/>
+	</bean>
+
+	<bean id="redisHttpService" parent="httpService">
+		<constructor-arg index="0" ref="redishttpClient"/>
+	</bean>
+
+	<bean id="redishttpClient" parent="httpClient">
+		<constructor-arg index="0" ref="redismultiThreadedHttpConnectionManager"/>
+	</bean>
+
+	<bean id="redismultiThreadedHttpConnectionManager" parent="multiThreadedHttpConnectionManager">
+		<property name="params" ref="redishttpConnectionManagerParams"/>
+	</bean>
+
+	<bean id="redishttpConnectionManagerParams" parent="httpConnectionManagerParams">
+		<property name="soTimeout" value="1000"/>
+		<property name="connectionTimeout" value="500"/>
+		<property name="defaultMaxConnectionsPerHost" value="1000"/>
+		<property name="maxTotalConnections" value="100"/>
+	</bean>
+
+
+
+
+
+
+</beans>

@@ -1,0 +1,24 @@
+<!--Indifi starts here-->
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="/WEB-INF/tld/yatraTagLib.tld" prefix="yatra" %>
+<div class="content cpmt_payop" id="tab_indifi" style="display:none;">
+
+	<input type="hidden" name="payop" value="indifi"/>
+	<ul class="noListStyle">
+		<c:forEach var="paymentBean" items="${paymentDisplayBean.paymentOptions}">				
+			<c:if test="${paymentBean.code == 'indifi'}">
+				<c:forEach var="messageBean" items="${paymentBean.messages}">
+					<c:if test="${(messageBean.messageType == 'WARNING') and (messageBean.status == 'ENABLED')}">
+						<div class="wflL pmt_warningMsgBlock">
+							<span><font color="#FF0000"><yatra:languageTag content="${messageBean.messageText}" language="${language}"/></font></span>
+						</div>
+					</c:if>
+				</c:forEach>
+				<div class="cpmt_displayTxt">
+					<yatra:languageTag content="Use" language="${language}"/> <yatra:languageTag content="${paymentBean.displayText}" language="${language}"/> <yatra:languageTag content="for any booking on Yatra.com" language="${language}"/> <yatra:languageTag content="Please click 'Pay now' for continue" language="${language}"/>.
+				</div>
+			</c:if>
+		</c:forEach>
+	</ul>
+</div>
+<!--Indifi ends here-->

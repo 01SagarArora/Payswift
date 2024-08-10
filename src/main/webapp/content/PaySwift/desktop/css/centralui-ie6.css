@@ -1,0 +1,114 @@
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+	display:none;
+}
+.ytColm9{margin-left:0!important}
+.ytColm3{margin-left:10px!important}
+.ytColm9, .ytColm3{float:left}
+
+.ie6Input{height:27px !important;float:left;}
+.cpmt_cardNavigation{background:url("../images/navBg.gif") repeat-y scroll 0 0 transparent;width:124px;}
+.cpmt_alignMid{float:left;position:relative;top:15px;}
+.radioMid{position:relative;top:-5px;}
+.cpmt_quickBook ul li label.ie6{width:220px;float:left}
+.cpmt_IntCardDetails .cpmt_billing{float:left}
+.cpmt_CVVno{float:left}
+.cpmt_quickBook ul li input{float:left;position:relative;top:-5px;}
+
+
+.PaymentSprite{background: url("../images/paymentSprite.gif") no-repeat scroll 0 0 transparent;display:block}
+.ytLogo{background-position:0px 0px;width:160px;height:45px;position:absolute;top:8px;margin-left:15px;}
+.guestIcon{background-position: -9px -56px;height: 28px;position: absolute;right: 0;top: 1px;width: 28px;}
+.sepFlight{background-position: -10px -99px;height: 19px;position: absolute;left:20%;top: 20px;width: 24px;}
+.StatsFlights{background-position: -52px -107px;height: 19px;position: absolute;left:-5px;width: 19px;}
+.payPrint{background-position:-48px -58px;width:15px;height:15px;float:left}
+.payPayment{background-position:-73px -56px;width:15px;height:15px;float:left}
+.payBook{background-position:-107px -57px;width:15px;height:15px;float:left}
+.payCall{background-position:-131px -57px;width:15px;height:15px;float:left}
+.payForum{background-position:-160px -57px;width:15px;height:15px;float:left}
+.arrowRight{background-position: -79px -83px;float: right;height: 15px;position: absolute;right: 0;top: 5px;width: 15px;}
+.destSep{background-position: -105px -78px;height: 15px;float:left;width: 16px;margin:0 10px;}
+.orSep{background-position: -88px -102px;color: #FFFFFF;font-family: latobold;font-size: 22px;left: -29px;padding: 17px 0;position: absolute;text-align: center;top: 0;width: 61px;top:40%}
+.DateCal{background-position: -136px -83px;left:0px;height: 20px;margin-right:10px;position: absolute;width: 18px;}
+.totalPax{background-position: -158px -83px;left:0px;height: 20px;margin-right:10px;position: absolute;width: 18px;}
+.breadChek{background-position: -159px -106px;left:44%;height: 20px;position: absolute;width: 18px;top:0px}
+.yatraLog{background-position: -7px -175px;height: 35px;width: 124px;cursor:pointer;display:block}
+.yatraLog:hover{background-position: -7px -220px;height: 35px;width: 124px;display:block}
+.yatraFb{background-position: -7px -321px;height: 35px;width: 156px;display:block;cursor:pointer;}
+.yatraFb:hover{background-position: -7px -274px;height: 35px;width: 156px;display:block}
+.ImpOpt{background-position: -133px -390px;height: 45px;left: 0;position: absolute;width: 45px;}
+.visaLogo{background-position:-9px -463px;width:54px;height:32px;display:inline-block;vertical-align:middle}
+.Rinsur{    background-position: -161px -122px;
+    height: 35px;
+    left: 3px;
+    position: absolute;
+    top: 2px;
+    width: 36px;}
+.yatraSbi{background-position:-160px -176px;height: 35px;left: 2px;position: absolute;width: 35px;top:2px;}
+.yatraPromo{background-position:-160px -227px;height: 35px;left: 2px;position: absolute;width: 35px;top:2px;}
+.UniClose{background-position:-56px -129px;width:18px;height:18px;top:40%;position:absolute;right:0px;cursor:pointer}
+.masterLogo{background-position:-9px -507px;width:51px;height:32px;display:inline-block;vertical-align:middle}
+.logo_pointDwn {background-position: -10px -127px;display: inline-block;height: 10px;position: absolute;right: 6px;top: 11px;vertical-align: middle;width: 13px;z-index: 50;}
+.selDselSep{ background-position: -8px -142px;display: inline-block;height: 15px;vertical-align: middle;width: 1px;z-index: 50;margin:0 3px;float:left}
+.salBrand{ background-position: -1px -358px;height: 86px;position: absolute;right: 30px;top: -20px;width: 81px;}
+.removeIcon{background-position:-56px -129px;width:18px;height:18px;top:2%;position:absolute;right:-3px;cursor:pointer}
+.VerSecured{ background-position: -1px -810px;display: inline-block;height: 27px;vertical-align: middle;width: 60px;}
+.masterSEc{background-position: -1px -841px;display: inline-block;height: 24px;vertical-align: middle;width: 60px;margin-top:3px;}
+.VerVisa{background-position: -1px -875px;display: inline-block;height: 24px;vertical-align: middle;width: 60px;}
+.SafeKey{background-position: -1px -913px;display: inline-block;height: 24px;vertical-align: middle;width: 75px;}
+.pciDjj{background-position: -1px -947px;display: inline-block;height: 24px;vertical-align: middle;width: 75px;}
+.visaCardN{background-position: -6px -463px;display: inline-block;height: 38px;vertical-align: top;width: 54px;margin-top:5px;}
+.MasterCardN{background-position: -6px -503px;display: inline-block;height: 38px;vertical-align: top;width: 54px;margin-top:5px;}
+.MasterCardN{background-position: -6px -503px;display: inline-block;height: 38px;vertical-align: top;width: 54px;margin-top:5px;}
+.visaCardNFade{background-position:-67px -465px;display: inline-block;height: 38px;vertical-align: top;width: 54px;margin-top:5px;}
+.MasterCardNFade{background-position:-69px -503px;display: inline-block;height: 38px;vertical-align: top;width: 54px;margin-top:5px;}
+.DinnrClub{background-position:-6px -551px;display: inline-block;height: 38px;vertical-align: top;width: 54px;margin-top:5px;}
+.DinnrClubFade{background-position:-70px -551px;display: inline-block;height: 38px;vertical-align: top;width: 54px;margin-top:5px;}
+.Amex{background-position:-6px -596px;display: inline-block;height: 38px;vertical-align: top;width: 54px;margin-top:5px;}
+.AmexFade{background-position:-69px -596px;display: inline-block;height: 38px;vertical-align: top;width: 54px;margin-top:5px;}
+.CVV3{background-position: -136px -463px;height: 35px;width: 60px;float:left}
+.CVV4{background-position:-135px -512px;height: 35px;width: 60px;float:left}
+.MasteroCardN{background-position: -6px -655px;display: inline-block;height: 38px;vertical-align: top;width: 54px;margin-top:5px;}
+.MasteroCardNFade{background-position: -70px -655px;display: inline-block;height: 38px;vertical-align: top;width: 54px;margin-top:5px;}
+.logo_quickBook{background-position:-78px -437px;width:82px;height:20px;margin-left:5px;float:left}
+.redeemCiti{background-position:-11px -760px;width:100px;height:30px;}
+.airtelMoney{background-position:-11px -703px;width:100px;height:37px;float:left}
+.logo_infoI{background-position: -158px -572px;height: 14px;position: absolute;right: 38%;top: 4px;width: 15px;}
+.amexEze{background-position:-9px -984px;width:112px;height:35px;float:left;margin-right:20px;}
+.pointCust {background-position:-20px -144px;display: inline-block;height: 10px;position: absolute;right: 14px;top: 3px;vertical-align: middle;width: 13px;z-index: 50;}
+.arrowDWN{background-position:-19px -145px;position:absolute;padding:7px;right:55%;top:1px}
+.arrowUP{background-position:-41px -143px;position:absolute;padding:7px;right:55%;top:1px}
+.optDwm{background-position:-112px -701px;position:absolute;padding:7px;left:24%;top:16px}
+.optRyt{background-position:-96px -704px;position:absolute;padding:7px;left:24%;top:16px}
+.DatePik{background-position: -157px -588px;height: 20px;position: absolute;width: 18px;right:28%;right:6px;}
+.hotelNo{background-position:-65px -464px;width:56px;height:13px;left:-23px;top:-3px;position:relative;padding-left:4px;font-size:8px;color
+:#ffffff;padding-top:1px}
+.nights{background-position:-63px -481px;width:20px;height:20px;margin:0 auto}
+/* optional addons ends here*/
+
+/*step 3 css starts here*/
+.cpmt_Paymentdiv{width:700px;float:left;font-family:LatoReqular}
+.NewPaytabbox{width:525px;}
+.cpmt_Paytabbox{width:529px;}
+.select {top:1px;}
+/*bank srprite starts here*/
+.BankSprite{background: url("../images/bankSprite.gif") no-repeat scroll 0 0 transparent;width:124px;height:40px;display:inline-block;vertical-align:middle;}
+.hdfc-net{background-position:0px 0px}
+.icici-net{background-position:0px -48px}
+.citi-net{background-position:0px -96px}
+.sbi-net{background-position:0px -143px}
+.axis-net{background-position:0px -192px}
+.kotak-net{background-position:0px -240px}
+.idbi-net{background-position:0px -288px}
+.scb-net{background-position:0px -336px}
+.pnb-net{background-position:0px -384px}
+.cpmt_net ul li{float:left}
+/*bank srprite ends here*/
+
+.cpmt_payop .blockEx{width:90px;float:left}
+.cpmt_alignMid{float:left}
+.cpmt_payBlock{}
+.cpmt_payBlock:hover, .PaySel{float:left;}
+.cpmt_amexEzeTxt{margin-left:0px !important}

@@ -1,0 +1,682 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>Yatra</groupId>
+    <artifactId>PaySwift</artifactId>
+
+    <version>20.84</version>
+
+    <packaging>war</packaging>
+    <name>PaySwift</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <imagename>payswift</imagename>
+        <org.springframework.version>3.0.5.RELEASE</org.springframework.version>
+        <tiles.version>2.2.2</tiles.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <!-- default environment -->
+    <!-- profiles -->
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <env>dev</env>
+            </properties>
+        </profile>
+        <profile>
+            <id>qa</id>
+            <properties>
+                <env>qa</env>
+            </properties>
+        </profile>
+        <profile>
+            <id>prod</id>
+            <properties>
+                <env>prod</env>
+            </properties>
+        </profile>
+    </profiles>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.13</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.3.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.glassfish.jaxb</groupId>
+            <artifactId>jaxb-runtime</artifactId>
+            <version>2.3.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yatra.payment</groupId>
+            <artifactId>jsse</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20090211</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.9.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-oxm</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.21</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.zxing</groupId>
+            <artifactId>core</artifactId>
+            <version>3.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.zxing</groupId>
+            <artifactId>javase</artifactId>
+            <version>3.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>jsp-api</artifactId>
+            <version>2.1</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>net.sf.json-lib</groupId>
+            <artifactId>json-lib</artifactId>
+            <version>2.4</version>
+            <classifier>jdk15</classifier>
+        </dependency>
+
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+            <version>1.9.13</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.2.2</version>
+        </dependency>
+
+        <!-- <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20090211</version>
+        </dependency> -->
+
+        <!-- <dependency>
+            <groupId>com.yatra.platform.services</groupId>
+            <artifactId>SingleSignOnServiceClient</artifactId>
+            <exclusions>
+                <exclusion>
+                    <artifactId>c3p0</artifactId>
+                    <groupId>c3p0</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>YTPropertyReaderReloaded</artifactId>
+                    <groupId>com.yatra.platform</groupId>
+                </exclusion>
+            </exclusions>
+             <version>12.0-RELEASE</version>
+        </dependency> -->
+        <!-- Dependencies for saved tokenized cards -->
+        <dependency>
+            <groupId>com.yatra</groupId>
+            <artifactId>TokenizedCardsClient</artifactId>
+            <version>0.0.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.yatra</groupId>
+            <artifactId>TokenizedCardsInterface</artifactId>
+            <version>0.0.6</version>
+        </dependency>
+
+        <!-- Dependencies for saved qb cards -->
+        <dependency>
+            <groupId>com.yatra</groupId>
+            <artifactId>ExpressCheckoutCardsClient</artifactId>
+            <version>6.2.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.yatra</groupId>
+            <artifactId>ExpressCheckoutCardsInterface</artifactId>
+            <version>6.2.2</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.yatra.platform.services</groupId>
+            <artifactId>UserProfileServiceClient</artifactId>
+            <version>12.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>jstl</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+        </dependency>
+
+        <!-- START redis cache dependencies -->
+        <dependency>
+            <groupId>com.yatra.platform</groupId>
+            <artifactId>YTCache</artifactId>
+            <version>Redis-2.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-redis</artifactId>
+            <version>1.1.0.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>2.1.0</version>
+            <type>jar</type>
+        </dependency>
+        <!-- END redis cache dependencies -->
+
+        <dependency>
+            <groupId>com.yatra.wallet</groupId>
+            <artifactId>YTWalletClient</artifactId>
+            <version>2.3-Full</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>ejb3-persistence</artifactId>
+            <version>3.3.2.Beta1</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-dbcp</groupId>
+            <artifactId>commons-dbcp</artifactId>
+            <version>1.2.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>3.3.2.GA</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
+            <version>1.3.2</version> <!-- Check for the latest version -->
+        </dependency>
+
+        <!-- <dependency> <groupId>com.yatra.platform</groupId> <artifactId>YTCore</artifactId>
+            <version>1.0-RELEASE</version> </dependency> -->
+
+        <dependency>
+            <groupId>xalan</groupId>
+            <artifactId>xalan</artifactId>
+            <version>2.7.2</version>
+        </dependency>
+
+        <!-- Tiles -->
+        <dependency>
+            <groupId>org.apache.tiles</groupId>
+            <artifactId>tiles-jsp</artifactId>
+            <version>${tiles.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tiles</groupId>
+            <artifactId>tiles-servlet</artifactId>
+            <version>${tiles.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>jcl-over-slf4j</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tiles</groupId>
+            <artifactId>tiles-template</artifactId>
+            <version>${tiles.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tiles</groupId>
+            <artifactId>tiles-el</artifactId>
+            <version>${tiles.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.mchange</groupId>
+            <artifactId>c3p0</artifactId>
+            <version>0.9.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-vfs</groupId>
+            <artifactId>commons-vfs</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-httpclient</groupId>
+            <artifactId>commons-httpclient</artifactId>
+            <version>3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity</artifactId>
+            <version>1.6.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+            <version>1.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.activation</groupId>
+            <artifactId>activation</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20090211</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.simple-spring-memcached</groupId>
+            <artifactId>spymemcached</artifactId>
+            <version>2.7.3</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.xml</groupId>
+            <artifactId>jaxrpc-api</artifactId>
+            <version>1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.axis</groupId>
+            <artifactId>axis</artifactId>
+            <version>1.4</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-discovery</groupId>
+            <artifactId>commons-discovery</artifactId>
+            <version>0.4</version>
+        </dependency>
+        <dependency>
+            <groupId>wsdl4j</groupId>
+            <artifactId>wsdl4j</artifactId>
+            <version>1.6.3</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <scope>provided</scope>
+            <version>3.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.9</version>
+        </dependency>
+
+
+        <!-- Library Code from Air Code Base -->
+        <dependency>
+            <groupId>com.yatra.library</groupId>
+            <artifactId>yatra_core</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yatra.library</groupId>
+            <artifactId>yatra_role</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yatra.library</groupId>
+            <artifactId>yatra_cache</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.yatra.library</groupId>
+            <artifactId>yatra_properties</artifactId>
+            <version>2.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.yatra.library</groupId>
+            <artifactId>yatra_stats</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yatra.library</groupId>
+            <artifactId>yatra_mo_service</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yatra.library</groupId>
+            <artifactId>yatra_payment_service</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yatra.library</groupId>
+            <artifactId>yatra_currency_service</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yatra.library</groupId>
+            <artifactId>yatra_services</artifactId>
+            <version>1.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.yatra.library</groupId>
+            <artifactId>yatra_ui</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yatra.checkout</groupId>
+            <artifactId>B2BExpressCheckoutCardsClient</artifactId>
+            <version>4.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yatra.checkout</groupId>
+            <artifactId>B2BExpressCheckoutCardsInterface</artifactId>
+            <version>4.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yatra.checkout</groupId>
+            <artifactId>AgentExpressCheckoutCardsClient</artifactId>
+            <version>1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yatra.checkout</groupId>
+            <artifactId>AgentExpressCheckoutCardsInterface</artifactId>
+            <version>1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.woodstox</groupId>
+            <artifactId>stax2-api</artifactId>
+            <version>4.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.woodstox</groupId>
+            <artifactId>woodstox-core-asl</artifactId>
+            <version>4.4.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjrt</artifactId>
+            <version>1.8.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.8.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yatra.payment</groupId>
+            <artifactId>paytm_checksum</artifactId>
+            <version>1.1-RELEASE</version>
+        </dependency>
+
+
+    </dependencies>
+
+    <build>
+        <finalName>PaySwift</finalName>
+        <plugins>
+
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.6</version>
+                <executions>
+                    <execution>
+                        <id>copy-resources</id>
+                        <!-- here the phase you need -->
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.outputDirectory}</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>src/main</directory>
+                                    <filtering>true</filtering>
+                                    <includes>
+                                        <include>**/*</include>
+                                    </includes>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>com.samaxes.maven</groupId>
+                <artifactId>minify-maven-plugin</artifactId>
+                <version>1.7.6</version>
+                <executions>
+                    <execution>
+                        <id>payswift-minify-helper-js</id>
+                        <phase>prepare-package</phase>
+                        <configuration>
+                            <jsSourceDir>content/PaySwift/desktop/js</jsSourceDir>
+                            <jsSourceFiles>
+                                <jsSourceFile>tiny-scroll.js</jsSourceFile>
+                                <jsSourceFile>tools-responsive.js</jsSourceFile>
+                                <jsSourceFile>helper.js</jsSourceFile>
+                                <jsSourceFile>jquery-ui.js</jsSourceFile>
+                                <jsSourceFile>modernizr.js</jsSourceFile>
+                                <jsSourceFile>jquery.popmodal.js</jsSourceFile>
+                            </jsSourceFiles>
+                            <jsFinalFile>payswift-combine-helper.js</jsFinalFile>
+                            <jsTargetDir>content/PaySwift/desktop/js/</jsTargetDir>
+                        </configuration>
+                        <goals>
+                            <goal>minify</goal>
+                        </goals>
+                    </execution>
+
+                    <execution>
+                        <id>payswift-minify-user-js</id>
+                        <phase>prepare-package</phase>
+                        <configuration>
+                            <jsSourceDir>content/PaySwift/desktop/js</jsSourceDir>
+                            <jsSourceFiles>
+                                <jsSourceFile>payment-commons.js</jsSourceFile>
+                                <jsSourceFile>centralPayment.js</jsSourceFile>
+                                <jsSourceFile>centralui.js</jsSourceFile>
+                                <jsSourceFile>centralui-validation.js</jsSourceFile>
+                                <jsSourceFile>common.js</jsSourceFile>
+                                <jsSourceFile>ewalletui.js</jsSourceFile>
+                                <jsSourceFile>facebookAuth.js</jsSourceFile>
+                                <jsSourceFile>quickbookui.js</jsSourceFile>
+                                <jsSourceFile>corporateCardui.js</jsSourceFile>
+                            </jsSourceFiles>
+                            <jsFinalFile>payswift-combine-user.js</jsFinalFile>
+                            <jsTargetDir>content/PaySwift/desktop/js/</jsTargetDir>
+                        </configuration>
+                        <goals>
+                            <goal>minify</goal>
+                        </goals>
+                    </execution>
+
+                    <execution>
+                        <id>payswift-minify-user-css</id>
+                        <phase>prepare-package</phase>
+                        <configuration>
+                            <cssSourceDir>content/PaySwift/desktop/css</cssSourceDir>
+                            <cssSourceFiles>
+                                <cssSourceFile>bookingsummary.css</cssSourceFile>
+                                <cssSourceFile>jquery-ui.css</cssSourceFile>
+                                <cssSourceFile>centralui.css</cssSourceFile>
+                            </cssSourceFiles>
+                            <cssFinalFile>payswift-combine-user.css</cssFinalFile>
+                            <cssTargetDir>content/PaySwift/desktop/css/</cssTargetDir>
+                        </configuration>
+                        <goals>
+                            <goal>minify</goal>
+                        </goals>
+                    </execution>
+
+                    <execution>
+                        <id>payswift-minify-common-css</id>
+                        <phase>prepare-package</phase>
+                        <configuration>
+                            <skipMerge>true</skipMerge>
+                            <cssSourceDir>content/PaySwift/common/css</cssSourceDir>
+                            <cssSourceFiles>
+                                <cssSourceFile>popup-new.css</cssSourceFile>
+                                <cssSourceFile>session-timer-popup.css</cssSourceFile>
+                            </cssSourceFiles>
+                            <cssTargetDir>content/PaySwift/common/css/</cssTargetDir>
+                        </configuration>
+                        <goals>
+                            <goal>minify</goal>
+                        </goals>
+                    </execution>
+
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>0.4.13</version>
+                <configuration>
+                    <serverId>dockerhub</serverId>
+                    <imageName>qaregistry.yatra.com/${imagename}:${project.version}</imageName>
+                    <pullOnBuild>true</pullOnBuild>
+                    <registryUrl>https://qaregistry.yatra.com</registryUrl>
+                    <baseImage>qaregistry.yatra.com/yatra-jdk-tomcat:8u201-8.0.43</baseImage>
+                    <maintainer>LinuxAdmin linuxadmin@yatra.com</maintainer>
+                    <labels>
+                        <label>ProductName=${project.artifactId}</label>
+                    </labels>
+                    <resources>
+                        <resource>
+                            <targetPath>/data/yatra/run/tomcat/webapps/</targetPath>
+                            <directory>${project.build.directory}</directory>
+                            <include>${project.build.finalName}.war</include>
+                        </resource>
+                    </resources>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+</project>

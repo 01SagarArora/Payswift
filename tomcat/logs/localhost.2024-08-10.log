@@ -1,0 +1,47 @@
+10-Aug-2024 10:48:01.764 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring FrameworkServlet 'paymentui'
+10-Aug-2024 10:48:26.351 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring FrameworkServlet 'paymentui'
+10-Aug-2024 11:17:22.698 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [paymentui] in context with path [/PaySwift] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: An invalid domain [.yatra.com] was specified for this cookie] with root cause
+	java.lang.IllegalArgumentException: An invalid domain [.yatra.com] was specified for this cookie
+		at org.apache.tomcat.util.http.Rfc6265CookieProcessor.validateDomain(Rfc6265CookieProcessor.java:218)
+		at org.apache.tomcat.util.http.Rfc6265CookieProcessor.generateHeader(Rfc6265CookieProcessor.java:153)
+		at org.apache.catalina.connector.Response.generateCookieString(Response.java:1008)
+		at org.apache.catalina.connector.Response.addCookie(Response.java:956)
+		at org.apache.catalina.connector.ResponseFacade.addCookie(ResponseFacade.java:383)
+		at com.yatra.platform.util.CookieUtils.createCookie(CookieUtils.java:75)
+		at com.yatra.platform.util.CookieUtils.createCookieIfNull(CookieUtils.java:108)
+		at com.yatra.platform.commons.role.CallContextInterceptor.preHandle(CallContextInterceptor.java:39)
+		at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:781)
+		at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:719)
+		at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:644)
+		at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:549)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:656)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:765)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at com.yatra.payment.xss.filter.XSSFilterStrict.doFilter(XSSFilterStrict.java:27)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:698)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:367)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:639)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:885)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1693)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:750)
+10-Aug-2024 11:29:05.960 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'paymentui'
+10-Aug-2024 11:32:34.355 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring FrameworkServlet 'paymentui'
+10-Aug-2024 11:35:36.253 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'paymentui'
+10-Aug-2024 11:36:03.209 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'paymentui'
